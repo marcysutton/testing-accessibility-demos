@@ -1,0 +1,167 @@
+:root {
+    --menu-background-color: #000;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}  
+#header {
+    background: url(images/backpacking1.png) no-repeat;
+    background-position: top center;
+    padding-top: 1em;
+    position: relative;
+}
+#header-nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+    z-index: 1;
+}
+#header-logo a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    font-weight: 500;
+    padding: 1.5em;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.logo-img {
+    display: inline-block;
+    margin-right: 0.25em;
+}
+#header-megamenu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.megamenu-navitem {
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 1.75em;
+    position: relative;
+}
+.megamenu-section:first-of-type .megamenu-navitem {
+    margin-left: 300px;
+}
+.megamenu-submenu {
+    background-color: var(--menu-background-color);
+    color: #fff;
+    font-size: 0.85rem;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 940px;
+}
+.megamenu-section.active .megamenu-navitem {
+    background-color: #f2f2f3;
+}
+.megamenu-section.active .megamenu-submenu {
+    height: 220px;
+    opacity: 1;
+}
+.megamenu-section.active .megamenu-navitem:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid black;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    width: 0;
+}
+.megamenu-submenu-group {
+    margin: 3em;
+}
+.megamenu-submenu-header {
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.megamenu-submenu-link a {
+    border: 1px dashed transparent;
+    color: inherit;
+    display: inline-block;
+    margin: 0.25em;
+    padding: 0.25em;
+    text-decoration: none;
+}
+.megamenu-submenu-link a:hover {
+    border: 1px dashed currentColor;
+}
+.megamenu-submenu-link:before {
+    color: #ccc;
+    content: '\02C6';
+    display: inline-block;
+    font-size: 0.85rem;
+    margin: 0 0.15rem 0 0;
+    transform: rotate(90deg);
+}
+.form {
+    align-items: end;
+    background-color: #fff;
+    box-shadow: 0 2px 4px #00000008;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 3fr 3fr 1fr;
+    padding: 2em;
+    margin: 4em auto 0; /* to-do: bottom of header overlapping image */
+    width: 780px;
+}
+.form-field .label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.form-field .custom-input {
+    position: relative;
+}
+.form-field .custom-input span[class^="icon"] {
+    background-color: #333;
+    height: 1em;
+    width: 1em;
+}
+.form-field .custom-input input {
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E3;
+    border-radius: 5px;
+    font-family: inherit;
+    line-height: 2;
+    height: 2em;
+    padding-left: 3em;
+    width: 100%;
+    -webkit-appearance: none;
+}
+.form-submit span[class^="icon"] {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 2;
+    text-align: center;
+    vertical-align: center;
+    width: 1.5em;
+}
+#main {
+
+}
+#footer {
+
+}
