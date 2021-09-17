@@ -168,17 +168,29 @@ body {
     margin: -60px auto 0;
     width: 780px;
 }
-.form-field .label {
-    font-weight: bold;
-    font-size: 1rem;
-}
-.form-field .custom-input {
+.form-field {
     position: relative;
 }
-.form-field .custom-input span[class^="icon"] {
+.form-field .label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.form-field span[class^="icon"] {
     background-color: #333;
+    display: block;
     height: 1em;
     width: 1em;
+}
+.form-field .custom-input span[class^="icon"] {
+    height: 2em;
+    margin: 1rem 0 0 0.5em;
+    position: absolute;
+}
+.form-field span.icon-lookingglass {
+    background: url(images/icons/icon-lookingglass.svg) no-repeat;
+}
+.form-field span.icon-calendar {
+    background: url(images/icons/icon-calendar.svg) no-repeat;
 }
 .form-field .custom-input input {
     box-sizing: border-box;
@@ -187,20 +199,27 @@ body {
     border-radius: 5px;
     font-family: inherit;
     line-height: 2;
-    height: 2em;
+    height: 3rem;
     padding-left: 3em;
     width: 100%;
     -webkit-appearance: none;
 }
-.form-submit span[class^="icon"] {
+.form-submit .button-lookingglass {
     background-color: #000;
-    color: #fff;
+    border-radius: 5px;
     display: inline-block;
-    height: 1.5em;
-    line-height: 2;
+    height: 3rem;
+    line-height: 1;
+    padding: 0.75rem;
     text-align: center;
-    vertical-align: center;
-    width: 1.5em;
+    vertical-align: middle;
+    width: 3em;
+}
+.form-submit .button-lookingglass svg {
+    display: inline-block;
+}
+.form-submit .button-lookingglass svg path {
+    fill: #fff;
 }
 .section {
     margin: 4em auto;
