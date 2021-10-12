@@ -4,7 +4,7 @@
   "description": "A repo of exercises for the Testing Accessibility workshop series",
   "main": "index.html",
   "scripts": {
-    "start": "http-server"
+    "start": "sergey --watch --host=0.0.0.0 --imports=_includes"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "url": "https://github.com/marcysutton/testing-accessibility-demos/issues"
   },
   "homepage": "https://github.com/marcysutton/testing-accessibility-demos#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "sergey": "git+https://github.com/marcysutton/sergey.git"
+  }
 }

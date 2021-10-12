@@ -78,7 +78,8 @@ To get the app up and running (and really see if it worked), run:
 npm start
 ```
 
-This should start up your browser at the port indicated in your Terminal.
+This should start up your browser at the URL indicated in your Terminal:
+`http://0.0.0.0:8080`
 
 <!--
 If you're familiar, this is a standard

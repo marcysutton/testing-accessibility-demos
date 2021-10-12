@@ -81,15 +81,18 @@ body {
     position: absolute;
     width: 940px;
 }
-.megamenu-section.active .megamenu-navitem {
+.megamenu-section.active .megamenu-navitem,
+.megamenu-section:hover .megamenu-navitem {
     background-color: #f2f2f3;
 }
-.megamenu-section.active .megamenu-submenu {
+.megamenu-section.active .megamenu-submenu,
+.megamenu-section:hover .megamenu-submenu {
     height: 225px;
     opacity: 1;
     overflow: hidden;
 }
-.megamenu-section.active .megamenu-navitem:after {
+.megamenu-section.active .megamenu-navitem:after,
+.megamenu-section:hover .megamenu-navitem:after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-bottom: 4px solid black;
@@ -226,7 +229,7 @@ body {
     max-width: 940px;
 }
 .overlapping-two-col {
-    padding-top: 4em;
+    padding-top: 3em;
     position: relative;
 }
 .text-block-wrap {
