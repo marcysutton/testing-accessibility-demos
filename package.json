@@ -2,10 +2,18 @@
   "name": "testing-accessibility-demos",
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility workshop series",
-  "main": "index.html",
   "scripts": {
-    "start": "sergey --watch --host=0.0.0.0 --imports=_includes"
+    "start": "parcel --host=0.0.0.0",
+    "build": "parcel build --host=0.0.0.0"
   },
+  "source": [
+    "index.html",
+    "exercise1-keyboard/before/index.html", "exercise1-keyboard/after/index.html",
+    "exercise2-devtools/before/index.html", "exercise2-devtools/after/index.html",
+    "exercise3-extensions/before/index.html", "exercise3-extensions/after/index.html",
+    "exercise4-magnification/before/index.html", "exercise4-magnification/after/index.html",
+    "exercise5-screenreader/before/index.html", "exercise5-screenreader/after/index.html"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcysutton/testing-accessibility-demos.git"
@@ -26,6 +34,7 @@
   "homepage": "https://github.com/marcysutton/testing-accessibility-demos#readme",
   "dependencies": {},
   "devDependencies": {
-    "sergey": "git+https://github.com/marcysutton/sergey.git"
+    "parcel": "^2.0.0",
+    "posthtml-include": "^1.7.2"
   }
 }

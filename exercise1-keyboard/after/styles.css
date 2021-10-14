@@ -16,7 +16,7 @@ body {
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }  
 #header {
-    background: url(images/backpacking1.png) no-repeat;
+    background: url(../../images/backpacking1.png) no-repeat;
     background-position: top center;
     min-height: 640px;
     padding-top: 1em;
@@ -190,10 +190,10 @@ body {
     position: absolute;
 }
 .form-field span.icon-lookingglass {
-    background: url(images/icons/icon-lookingglass.svg) no-repeat;
+    background: url(../../images/icons/icon-lookingglass.svg) no-repeat;
 }
 .form-field span.icon-calendar {
-    background: url(images/icons/icon-calendar.svg) no-repeat;
+    background: url(../../images/icons/icon-calendar.svg) no-repeat;
 }
 .form-field .custom-input input {
     box-sizing: border-box;
