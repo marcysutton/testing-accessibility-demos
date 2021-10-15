@@ -85,6 +85,8 @@ This should start the site for your browser at the address indicated in your Ter
 
 ## Working through the exercises
 
+## Workshop 1: Manual Testing & Tools
+
 The project has **before** and **after** files for each of the 5 sections:
 
 1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example1-keyboard/)

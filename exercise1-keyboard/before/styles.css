@@ -1,5 +1,16 @@
+/* The basics */
 :root {
-    --menu-background-color: #000;
+    --color-primary-light: #fff;
+    --color-accent-dark: #000;
+    --color-border-input: #E0E0E3;
+    --color-link: var(--color-accent-dark);
+    --color-link-hover: #119bc8;
+    --bgcolor-header: var(--color-primary-light);
+    --bgcolor-menu: var(--color-accent-dark);
+    --bgcolor-form: var(--color-primary-light);
+    --bgcolor-input: #F9F9F9;
+    --bgcolor-content-page: #E5E5E5;
+    --bgcolor-footer: #F9F9F9;
 }
 * {
     box-sizing: border-box;
@@ -14,16 +25,31 @@ body {
     font-size: 24px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-}  
+}
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4, h5, h6 {
+    font-weight: normal;
+}
+a, a:link {
+    color: var(--color-link);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* Header and Mega-Nav */
 #header {
-    background: url(../../images/backpacking1.png) no-repeat;
-    background-position: top center;
-    min-height: 640px;
     padding-top: 1em;
     position: relative;
 }
 #header-nav {
-    background-color: #fff;
+    background-color: var(--bgcolor-header);
     display: flex;
     flex-direction: row;
     font-size: 1rem;
@@ -72,8 +98,8 @@ body {
     margin-left: 300px;
 }
 .megamenu-submenu {
-    background-color: var(--menu-background-color);
-    color: #fff;
+    background-color: var(--bgcolor-menu);
+    color: var(--color-primary-light);
     display: flex;
     font-size: 0.85rem;
     left: 0;
@@ -119,7 +145,7 @@ body {
 .megamenu-submenu-image-block a {
     align-items: center;
     background-color: #2C2D2B;
-    color: #fff;
+    color: var(--color-primary-light);
     display: flex;
     padding: 1em;
     line-height: 1;
@@ -155,133 +181,39 @@ body {
     margin: 0 0.15rem 0 0;
     transform: rotate(90deg);
 }
+
+/* Page Content and Layouts */
 #main {
     min-height: 600px;
     position: relative;
 }
-.form {
-    align-items: end;
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 10px 30px #00000012;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 3fr 3fr 1fr;
-    padding: 2em;
-    margin: -60px auto 0;
+.section {
+    margin: 0em auto;
+    padding: 4em 0;
     width: 780px;
 }
-.form-field {
-    position: relative;
-}
-.form-field .label {
-    font-weight: 500;
-    font-size: 1rem;
-}
-.form-field span[class^="icon"] {
-    background-color: #333;
-    display: block;
-    height: 1em;
-    width: 1em;
-}
-.form-field .custom-input span[class^="icon"] {
-    height: 2em;
-    margin: 1rem 0 0 0.5em;
-    position: absolute;
-}
-.form-field span.icon-lookingglass {
-    background: url(../../images/icons/icon-lookingglass.svg) no-repeat;
-}
-.form-field span.icon-calendar {
-    background: url(../../images/icons/icon-calendar.svg) no-repeat;
-}
-.form-field .custom-input input {
-    box-sizing: border-box;
-    background-color: #F9F9F9;
-    border: 1px solid #E0E0E3;
-    border-radius: 5px;
-    font-family: inherit;
-    line-height: 2;
-    height: 3rem;
-    padding-left: 3em;
-    width: 100%;
-    -webkit-appearance: none;
-}
-.form-submit .button-lookingglass {
-    background-color: #000;
-    border-radius: 5px;
-    display: inline-block;
-    height: 3rem;
-    line-height: 1;
-    padding: 0.75rem;
-    text-align: center;
-    vertical-align: middle;
-    width: 3em;
-}
-.form-submit .button-lookingglass svg {
-    display: inline-block;
-}
-.form-submit .button-lookingglass svg path {
-    fill: #fff;
-}
-.section {
+.wide-section {
     margin: 4em auto;
     max-width: 940px;
 }
-.overlapping-two-col {
-    padding-top: 3em;
-    position: relative;
+.two-col-50-50 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
 }
-.text-block-wrap {
-    position: relative;
+.two-col-50-50 img {
+    text-align: right;
 }
-.text-block-wrap img {
-    margin-top: -2em;
-    position: absolute;
-}
-.text-block {
-    background-color: #F8F8F8;
-    margin-left: auto;
-    padding: 1.5em 1.5em 4.5em 3.5em;
-    width: 620px;
-}
-.text-block h3 {
-    font-size: 1.5rem;
-}
-.text-block div {
-    color: #4A4B49;
-    font-size: 1rem;
-    margin: 1em 0;
-}
-.link-block {
-    font-size: 1rem;
-    margin-left: 1em;
-    margin-top: -3em;
-    max-width: 300px;
-}
-.link-list {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-.link-list a {
-    color: #4A4B49;
-    display: block;
-    margin: 0.25em 0;
-    padding: 0.25em 0;
-    text-decoration: none;
-}
-.link-list a:before {
-    color: #000;
-    content: '\02C6';
-    display: inline-block;
-    font-size: 1rem;
-    margin: 0 0.5rem 0 0;
-    transform: rotate(90deg);
+.two-col-60-40 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 4em;
 }
 .three-col {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     text-align: center;
 }
@@ -312,8 +244,204 @@ body {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+/* Forms */
+.form-field {
+    position: relative;
+}
+.form-field .label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+.form-field span[class^="icon"] {
+    background-color: #333;
+    display: block;
+    height: 1em;
+    width: 1em;
+}
+.form-field .custom-input span[class^="icon"] {
+    height: 2em;
+    margin: 1rem 0 0 0.5em;
+    position: absolute;
+}
+.form-field span.icon-lookingglass {
+    background: url(../../images/icons/icon-lookingglass.svg) no-repeat;
+}
+.form-field span.icon-calendar {
+    background: url(../../images/icons/icon-calendar.svg) no-repeat;
+}
+.form-field input,
+.form-field textarea {
+    box-sizing: border-box;
+    background-color: var(--bgcolor-input);
+    border-color: var(--color-border-input);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: inherit;
+    line-height: 2;
+    width: 100%;
+    -webkit-appearance: none;
+}
+.form-field input {
+    height: 3rem;
+    padding-left: 3em;
+}
+.form-field textarea {
+    height: 10em;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+}
+.form-submit [class^='btn-'] {
+    background-color: var(--color-accent-dark);
+    border-radius: 5px;
+    color: var(--color-primary-light);
+    display: inline-block;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 1;
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 3em;
+}
+.form-submit [class^='btn-']:hover {
+    cursor: pointer;
+}
+.form-submit .btn-send {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 1rem;
+    width: 6em;
+}
+.form-submit .btn-lookingglass svg {
+    display: inline-block;
+}
+.form-submit .btn-lookingglass svg path {
+    fill: var(--color-primary-light);
+}
+.form-submit .icon-arrow {
+    background: transparent url(../../images/icons/icon-right-arrow.svg) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 0.75em;
+    transition: all 0.25s ease-in-out;
+    width: 1em;
+}
+.form-submit .btn-send:hover .icon-arrow {
+    transform: translateX(4px);
+}
+
+/* Page-specific styles */
+
+/* Homepage */
+
+.page-home #header {
+    background: url(../../images/backpacking1.png) no-repeat;
+    background-position: top center;
+    min-height: 640px;
+}
+.page-home .form-wrap {
+    align-items: end;
+    background-color: var(--bgcolor-form);
+    border-radius: 3px;
+    box-shadow: 0 10px 30px #00000012;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 3fr 3fr 1fr;
+    padding: 2em;
+    margin: -60px auto 0;
+}
+.page-home .two-col-overlap {
+    padding-top: 3em;
+    position: relative;
+}
+.page-home .content-block-wrap {
+    position: relative;
+}
+.page-home .content-block-wrap img {
+    margin-top: -2em;
+    position: absolute;
+}
+.page-home .content-block {
+    background-color: #F8F8F8;
+    margin-left: auto;
+    padding: 1.5em 1.5em 4.5em 3.5em;
+    width: 620px;
+}
+.page-home .content-block div {
+    color: #4A4B49;
+    font-size: 1rem;
+    margin: 1em 0;
+}
+.page-home .link-block {
+    font-size: 1rem;
+    margin-left: 1em;
+    margin-top: -3em;
+    max-width: 300px;
+}
+.page-home .link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.page-home .link-list a {
+    color: #4A4B49;
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+    text-decoration: none;
+}
+.page-home .link-list a:before {
+    color: var(--color-accent-dark);
+    content: '\02C6';
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.5rem 0 0;
+    transform: rotate(90deg);
+}
+
+/* About Page */
+.page-about {
+    background-color: var(--bgcolor-content-page);
+    padding-bottom: 6em;
+}
+.page-about .form-wrap {
+    background-color: var(--bgcolor-form);
+    padding-bottom: 3em;
+}
+.page-about .form-wrap h6 {
+    margin-bottom: 0.5em;
+}
+.page-about .content-block div {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.page-about .content-block .contact {
+    align-items: flex-start;
+    display: flex;
+}
+.page-about .content-block [class^='icon-'] {
+    display: inline-block;
+    height: 1.5em;
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+.page-about .content-block .icon-at {
+    color: #545050;
+    font-size: 1.3rem;
+    height: 1em;
+}
+.page-about .content-block .icon-house {
+    background: transparent url(../../images/icons/icon-location.svg) no-repeat;
+    background-size: contain;
+}
+
+/* Footer */
 #footer {
-    background-color: #F9F9F9;
+    background-color: var(--bgcolor-footer);
     min-height: 100px;
     padding-bottom: 2em;
 }
@@ -322,7 +450,7 @@ body {
 }
 #footer-logo {
     align-items: center;
-    background-color: #000;
+    background-color: var(--color-accent-dark);
     border-radius: 50%;
     display: flex;
     height: 40px;

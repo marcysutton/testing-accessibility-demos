@@ -4,10 +4,10 @@
         <title>CampSpots - Testing Accessibility</title>
         <link rel="stylesheet" type="text/css" href="./styles.css" />
     </head>
-    <body>
+    <body class="page-home">
         <include src="exercise1-keyboard/before/_includes/header.html"></include>
         <div id="main">
-            <div class="form">
+            <div class="form-wrap section">
                 <div class="form-field">
                     <span class="label">Where to?</span>
                     <div class="custom-input">
@@ -23,17 +23,17 @@
                     </div>
                 </div>
                 <div class="form-field form-submit">
-                    <div class="button-lookingglass"onclick="javascript: return false;">
+                    <div class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.707 13.293L13 10.586C13.63 9.536 14 8.311 14 7C14 3.14 10.859 0 7 0C3.141 0 0 3.14 0 7C0 10.86 3.141 14 7 14C8.312 14 9.536 13.631 10.586 13L13.293 15.707C13.488 15.902 13.744 16 14 16C14.256 16 14.512 15.902 14.707 15.707L15.707 14.707C16.098 14.316 16.098 13.684 15.707 13.293ZM7 12C4.239 12 2 9.761 2 7C2 4.239 4.239 2 7 2C9.761 2 12 4.239 12 7C12 9.761 9.761 12 7 12Z" fill="#66666F"/>
                             </svg>                            
                     </div>
                 </div>
             </div>
-            <div class="section overlapping-two-col">
-                <div class="text-block-wrap">
+            <div class="wide-section two-col-overlap">
+                <div class="content-block-wrap">
                     <img src="../../images/tents.jpg">
-                    <div class="text-block">
+                    <div class="content-block">
                         <h3>Lorem ipsum dolor sit amet</h3>
                         <div>Proin sodales ligula semper diam pharetra semper. Curabitur porttitor augue a lacus eleifend,</div>
 
@@ -89,14 +89,6 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div class="section">
-                <div id="footer-logo">
-                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.7251 19.6828C22.7132 15.6203 18.5876 0.685345 18.5129 0.538109C18.4006 0.17173 18.0253 -0.0839955 17.5751 0.0255895L7.78892 2.62469C7.52694 2.69775 7.30133 2.91801 7.26388 3.17373C7.22646 3.28334 4.22592 15.8029 0.21398 19.7558C-0.236186 20.1952 0.0642797 21 0.739014 21H26.2385C26.988 21.001 27.2501 20.1222 26.7251 19.6828ZM2.35156 19.5366C5.72623 14.9982 8.12693 6.02969 8.65197 3.90666L16.7519 1.78355C15.6644 5.40753 12.3647 15.9866 9.06476 19.5368L2.35156 19.5366ZM22.2256 19.5366C20.7254 17.7434 19.0754 12.5452 18.5504 10.6413C18.2884 9.87305 17.2758 9.94611 17.0876 10.6413C16.5626 12.5817 14.9126 17.7789 13.4124 19.5366H10.9754C13.9001 15.5471 16.6 7.45662 17.8381 3.39414C19.0753 7.45769 21.7753 15.5471 24.7008 19.5366H22.2256Z" fill="#ffffff"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
+        <include src="exercise1-keyboard/before/_includes/footer.html"></include>
     </body>
 </html>
