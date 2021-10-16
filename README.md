@@ -89,11 +89,11 @@ This should start the site for your browser at the address indicated in your Ter
 
 The project has **before** and **after** files for each of the 5 sections:
 
-1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example1-keyboard/)
-2. [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example2-devtools/)
-3. [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example3-extensions/)
-4. [exercise4-magnification](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example4-keyboard/)
-5. [exercise5-screenreader](https://github.com/marcysutton/testing-accessibility-demos/tree/main/example5-screenreader/)
+1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise1-keyboard)
+2. [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise2-devtools/)
+3. [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise3-extensions/)
+4. [exercise4-magnification](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise4-keyboard/)
+5. [exercise5-screenreader](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise5-screenreader/)
 
 This will allow you to choose which exercise you want to work on while keeping things tidy.
 
