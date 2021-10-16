@@ -96,6 +96,7 @@ a:hover {
     width: 100%;
 }
 .megamenu-navitem {
+    color: #928d8d;
     cursor: pointer;
     font-size: 0.9rem;
     padding: 1.9em;
