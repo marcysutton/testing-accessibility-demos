@@ -16,9 +16,6 @@ body {
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }  
 #header {
-    background: url(../../images/backpacking1.png) no-repeat;
-    background-position: top center;
-    min-height: 640px;
     padding-top: 1em;
     position: relative;
 }

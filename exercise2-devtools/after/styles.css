@@ -405,9 +405,9 @@ button.megamenu-navitem {
 /* Homepage */
 
 .page-home #header {
-    background: url(../../images/backpacking1.png) no-repeat;
+    background: url(../../images/backpacking1.jpg) no-repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: contain;
     min-height: 640px;
 }
 .page-home .form-wrap {
