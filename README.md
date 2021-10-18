@@ -87,7 +87,7 @@ This should start the site for your browser at the address indicated in your Ter
 
 ## Workshop 1: Manual Testing & Tools
 
-The project has one **before** folder with **after** files for each of the 5 sections:
+The project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on are the Homepage and About page.
 
 0. [exercises-start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercises-start)
 1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise1-keyboard)
