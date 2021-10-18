@@ -87,15 +87,16 @@ This should start the site for your browser at the address indicated in your Ter
 
 ## Workshop 1: Manual Testing & Tools
 
-The project has **before** and **after** files for each of the 5 sections:
+The project has one **before** folder with **after** files for each of the 5 sections:
 
+0. [exercises-start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercises-start)
 1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise1-keyboard)
 2. [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise2-devtools/)
 3. [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise3-extensions/)
 4. [exercise4-magnification](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise4-keyboard/)
 5. [exercise5-screenreader](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise5-screenreader/)
 
-This will allow you to choose which exercise you want to work on while keeping things tidy.
+This will allow you to iterate on working files with separate directories for the answers.
 
 The purpose of an exercise is **not** for you to work through all the material.
 It's intended to get your brain thinking about the right questions to ask as

@@ -8,16 +8,12 @@
   },
   "source": [
     "index.html",
-    "exercise1-keyboard/before/index.html",
-    "exercise1-keyboard/after/index.html",
-    "exercise2-devtools/before/index.html",
-    "exercise2-devtools/after/index.html",
-    "exercise3-extensions/before/index.html",
-    "exercise3-extensions/after/index.html",
-    "exercise4-magnification/before/index.html",
-    "exercise4-magnification/after/index.html",
-    "exercise5-screenreader/before/index.html",
-    "exercise5-screenreader/after/index.html"
+    "exercises-start/index.html",
+    "exercise1-keyboard/index.html",
+    "exercise2-devtools/index.html",
+    "exercise3-extensions/index.html",
+    "exercise4-magnification/index.html",
+    "exercise5-screenreader/index.html"
   ],
   "repository": {
     "type": "git",
