@@ -1,5 +1,9 @@
 {
+    "component": {
+        "componentFolder": "workshop2-automated-testing/exercise2-cypress-components",
+        "testFiles": "**/*spec.{js,jsx,ts,tsx}"
+    },
     "integrationFolder": "./",
-    "testFiles": "{./workshop2-automated-testing/exercise2-cypress-components/*.spec.*,./workshop2-automated-testing/exercise3-cypress-integration/*.spec.*}",
+    "testFiles": "{./workshop2-automated-testing/exercise3-cypress-integration/*.spec.*}",
     "video": false
 }

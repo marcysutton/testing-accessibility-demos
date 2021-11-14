@@ -10,8 +10,9 @@
     "test:e2e": "start-server-and-test start http://0.0.0.0:1234 cypress:open",
     "test:ci": "start-server-and-test start http://0.0.0.0:1234 cypress:run",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -h 0.0.0.0 -p 6006",
+    "build-storybook": "build-storybook",
+    "test:components": "npx cypress open-ct"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,8 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@cypress/react": "^5.10.3",
+    "@cypress/webpack-dev-server": "^1.7.0",
     "@emotion/babel-plugin": "^11.3.0",
     "@parcel/transformer-sass": "^2.0.1",
     "@parcel/transformer-svg-react": "^2.0.1",
@@ -67,7 +70,8 @@
     "parcel": "^2.0.1",
     "posthtml-include": "^1.7.2",
     "react-test-renderer": "^17.0.2",
-    "start-server-and-test": "^1.14.0"
+    "start-server-and-test": "^1.14.0",
+    "webpack-dev-server": "^4.5.0"
   },
   "alias": {
     "components": "./workshop2-automated-testing/components",
