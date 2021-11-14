@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    outline: 0;
 }
 a, a:link {
     color: rgb(169, 0, 116);
@@ -29,10 +28,17 @@ header h1 {
 }
 main {
     margin: 0 auto 2em;
+    padding: 0 1em;
     max-width: 540px;
 }
 main h2, main p {
     text-align: center;
+}
+main details {
+    margin-bottom: 1.5em;
+}
+main details summary {
+    font-weight: bold;
 }
 main .exercise-list {
     list-style: none;

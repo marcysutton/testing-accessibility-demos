@@ -5,3 +5,5 @@ public
 dist
 .parcel-cache
 .DS_Store
+**/.DS_Store
+.cache

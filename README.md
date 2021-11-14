@@ -35,7 +35,7 @@
 
 - [git][git] v2.13 or greater
 - [NodeJS][node] `12 || 14 || 15 || 16`
-- [npm][npm] v6 or greater
+- [yarn][yarn] v1
 
 All of these must be available in your `PATH`. To verify things are set up
 properly, you can run this:
@@ -43,7 +43,7 @@ properly, you can run this:
 ```shell
 git --version
 node --version
-npm --version
+yarn --version
 ```
 
 If you have trouble with any of these, learn more about the PATH environment
@@ -62,7 +62,7 @@ should be able to run a few commands to get set up:
 ```
 git clone https://github.com/marcysutton/testing-accessibility-demos.git
 cd testing-accessibility-demos
-npm install
+yarn
 ```
 
 If you get any errors, please read through them and see if you can find out what
@@ -72,31 +72,44 @@ it's a lot).
 
 You can also download the source code from GitHub as a ZIP file instead of using `git clone`: https://github.com/marcysutton/testing-accessibility-demos/archive/refs/heads/main.zip
 
-## Running the app
+## Running the project locally
 
-To get the app up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
+This project contains various workshop files and a React web application. To get the app up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
 
 ```shell
-npm start
+yarn start
 ```
 
-This should start the site for your browser at the address indicated in your Terminal:
+This should start the site for your browser at the address indicated in your Terminal, with an index page listing files for each workshop:
 `http://0.0.0.0:1234`
 
 ## Working through the exercises
 
-## Workshop 1: Manual Testing & Tools
+### Workshop 1: Manual Testing & Tools
 
-The project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on are the Homepage and About page.
+This part of the project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on in Workshop 1 are the Homepage and About page, starting from this URL: `http://0.0.0.0:1234/workshop1-manual-testing/exercises-start`
 
-0. [exercises-start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercises-start)
-1. [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise1-keyboard)
-2. [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise2-devtools/)
-3. [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise3-extensions/)
-4. [exercise4-magnification](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise4-keyboard/)
-5. [exercise5-screenreader](https://github.com/marcysutton/testing-accessibility-demos/tree/main/exercise5-screenreader/)
+Here are the example source files for workshop 1:
 
-This will allow you to iterate on working files with separate directories for the answers.
+- [workshop1/start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercises-start)
+- [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise1-keyboard)
+- [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise2-devtools/)
+- [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise3-extensions/)
+- [exercise4-magnification](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise4-keyboard/)
+- [exercise5-screenreader](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise5-screenreader/)
+
+### Workshop 2: Automated Accessibility Testing with JavaScript
+
+In workshop 2, we get more advanced with a React web application built out of the same umbrella codebase. There are folders for each of the examples for you to reference but the build will already be set up with the required tooling. The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
+
+- [exercise0-storybook](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise0)
+- [exercise1-jest](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise1-jest)
+- [exercise2-cypress-components](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise1-cypress-components)
+- [exercise3-cypress-integration](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise3-cypress-integration)
+- [exercise4-puppeteer](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise4-puppeteer)
+- [exercise5-ci](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise5-ci)
+
+This structure will allow you to iterate on working files with separate directories for the answers.
 
 The purpose of an exercise is **not** for you to work through all the material.
 It's intended to get your brain thinking about the right questions to ask as
@@ -106,7 +119,7 @@ Contributions of any kind are welcome!
 
 <!-- prettier-ignore-start -->
 <!-->
-[npm]: https://www.npmjs.com/
+[yarn]: https://classic.yarnpkg.com/lang/en/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
 [license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square

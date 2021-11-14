@@ -3,18 +3,14 @@
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility workshop series",
   "scripts": {
-    "start": "parcel --host=0.0.0.0",
-    "build": "parcel build"
+    "start": "parcel index.html './workshop1-manual-testing' workshop2-automated-testing/index.html --host=0.0.0.0",
+    "build": "parcel build",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "test:e2e": "start-server-and-test start http://0.0.0.0:1234 cypress:open",
+    "test:ci": "start-server-and-test start http://0.0.0.0:1234 cypress:run",
+    "test": "jest"
   },
-  "source": [
-    "index.html",
-    "exercises-start/index.html",
-    "exercise1-keyboard/index.html",
-    "exercise2-devtools/index.html",
-    "exercise3-extensions/index.html",
-    "exercise4-magnification/index.html",
-    "exercise5-screenreader/index.html"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcysutton/testing-accessibility-demos.git"
@@ -25,19 +21,68 @@
     "html",
     "css",
     "web",
-    "development"
+    "development",
+    "testing"
   ],
   "author": "Marcy Sutton",
-  "license": "GPL",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/marcysutton/testing-accessibility-demos/issues"
   },
   "homepage": "https://github.com/marcysutton/testing-accessibility-demos#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
-    "parcel": "^2.0.0",
-    "postcss": "^8.3.9",
-    "postcss-css-variables": "^0.18.0",
-    "posthtml-include": "^1.7.2"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@parcel/transformer-sass": "^2.0.1",
+    "@testing-library/cypress": "^8.0.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axe-core": "^4.3.5",
+    "babel-jest": "^27.3.1",
+    "cypress": "^9.0.0",
+    "cypress-axe": "^0.13.0",
+    "jest": "^27.3.1",
+    "jest-transform-css": "^2.1.0",
+    "parcel": "^2.0.1",
+    "posthtml-include": "^1.7.2",
+    "react-test-renderer": "^17.0.2",
+    "start-server-and-test": "^1.14.0"
+  },
+  "jest": {
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "^/(.*)$": "<rootDir>/src/$1"
+    },
+    "modulePathIgnorePatterns": [
+      "cypress",
+      "examples"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "testEnvironment": "jest-environment-jsdom",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css"
+    }
   }
 }
