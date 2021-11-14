@@ -2,6 +2,8 @@ import React from "react"
 import BodyClassName from 'react-body-classname'
 
 import './styles/page-about.scss'
+import imgAbout from "images/about-image.jpg"
+
 const AboutPage = () => {
     return (
         <BodyClassName className="page-about">
@@ -13,7 +15,7 @@ const AboutPage = () => {
                         <div>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</div> 
                         <div>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</div>
                     </div>
-                    <img src="../../images/about-image.jpg" />
+                    <img src={imgAbout} />
                 </div>
                 <div className="form-wrap">
                     <div className="section two-parts-60-40">

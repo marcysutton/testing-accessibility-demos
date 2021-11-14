@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "@reach/router"
 import "./styles/header.scss"
 
-import CampSpotsLogo from "../../images/icons/camp-spots-logo.svg"
+import CampSpotsLogo from "images/icons/camp-spots-logo.svg"
 import MegaNav from "./meganav/"
 
 const Header = () => {

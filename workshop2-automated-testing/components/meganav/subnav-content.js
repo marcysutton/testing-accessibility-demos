@@ -1,29 +1,8 @@
 import React from "react"
+import PropTypes from 'prop-types'
 
-export const SubNavGroup = ({headerText = '', items = []}) => {
-    return (
-        <div className="megamenu-submenu-group">
-            <div className="megamenu-submenu-header">
-                {headerText}
-            </div>
-            {items.map((item, index) => (
-                <div className="megamenu-submenu-link" key={index}>
-                    <a href={item.url}>{item.name}</a>
-                </div>
-            ))}
-        </div>
-    )
-}
-
-export const SubNavImageBlock = ({imgSrc = '', url = '#', iconSrc = '', linkText = ''}) => (
-    <div className="megamenu-submenu-image-block">
-        <img src={imgSrc} />
-        <a href={url} className="megamenu-submenu-linkblock">
-            <img src={iconSrc} />
-            {linkText}
-        </a>
-    </div>
-)
+import SubNavGroup from './subnav-group'
+import SubNavImageBlock from './subnav-image-block'
 
 const SubNavContent = ({data = {}}) => {
     const linkGroups = data.linkGroups
@@ -41,6 +20,14 @@ const SubNavContent = ({data = {}}) => {
             })}
         </div>
     )
+}
+
+SubNavContent.propTypes = {
+    data: PropTypes.object,
+}
+
+SubNavContent.defaultProps = {
+    data: null,
 }
 
 export default SubNavContent

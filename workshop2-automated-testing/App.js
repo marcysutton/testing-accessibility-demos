@@ -1,9 +1,9 @@
 import React, {useRef} from 'react'
 import { Router } from "@reach/router"
 import './styles.scss'
-import Header from "./components/header"
-import HomePage from "./components/page-home"
-import AboutPage from "./components/page-about"
+import Header from "components/header"
+import HomePage from "components/page-home"
+import AboutPage from "components/page-about"
 
 import imgFooterLogo from "/images/icons/footer-logo.svg"
 

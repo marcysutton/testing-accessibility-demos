@@ -102,7 +102,8 @@ Here are the example source files for workshop 1:
 
 In workshop 2, we get more advanced with a React web application built out of the same umbrella codebase. There are folders for each of the examples for you to reference but the build will already be set up with the required tooling. The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
 
-- [exercise0-storybook](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise0)
+- [exercise0-storybook](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise0-storybook)
+  - To start Storybook, run this command: `yarn storybook`
 - [exercise1-jest](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise1-jest)
 - [exercise2-cypress-components](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise1-cypress-components)
 - [exercise3-cypress-integration](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise3-cypress-integration)

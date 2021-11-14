@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types'
 
 const SubNavButton = ({buttonName = 'Nav Item', idRef, onClick}) => {
     return (
@@ -11,4 +12,11 @@ const SubNavButton = ({buttonName = 'Nav Item', idRef, onClick}) => {
         </button>
     )
 }
+
+SubNavButton.propTypes = {
+    buttonName: PropTypes.string,
+    idRef: PropTypes.string,
+    onClick: PropTypes.func.isRequired
+}
+
 export default SubNavButton
