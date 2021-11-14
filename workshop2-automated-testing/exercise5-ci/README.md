@@ -4,8 +4,8 @@ In the spectrum of accessibility testing from manual to fully automated, CI is t
 
 To run tests in CI, push changes to a repo with a GitHub action enabled. The configured tests will run automatically!
 
-See the GitHub Actions configuration file in this folder:
+See the GitHub Actions workflow in the root folder:
 
 ```
-.github/workflows/node.js.yml
+/.github/workflows/node.js.yml
 ```
