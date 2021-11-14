@@ -1,5 +1,5 @@
 <div>
-  <h1 align="center">Build An Accessible Web App – Testing Accessibility</h1>
+  <h1 align="center">✨ Build An Accessible Web App – Testing Accessibility ✨</h1>
   <strong>
     Building accessible web applications with HTML, CSS, JavaScript, and React
   </strong>
@@ -7,8 +7,7 @@
     Ensuring your frontend code is accessible requires consistent development effort and testing of inclusive markup and scripted interactions. In this workshop we’ll build an
     accessible web application using widely supported and proven tools and
     techniques. We’ll cover everything about building accessible frontend
-    applications, from the absolute basics with HTML and CSS to the tricky parts you'll run into
-    building and testing JavaScript-heavy components.
+    applications, from the absolute basics with HTML and CSS to the tricky parts you’ll run into building and testing JavaScript-heavy components.
   </p>
 
   <!-- <a href="https://testingaccessibility.com">
@@ -28,8 +27,8 @@
 
 ## Prerequisites
 
-- The first workshop in the series on Manual Testing & Tools is intended for web developers of all skill and experience levels. Some knowledge of the Web Platform would be helpful (HTML, CSS, and JavaScript).
-- In later workshops, the exercises will become increasingly more advanced. Experience with JavaScript, React, and Git will be helpful.
+- The first workshop in the series on Manual Testing & Tools is intended for web developers of all skill and experience levels. Some knowledge of the Web Platform will be helpful (HTML, CSS, and JavaScript).
+- In later workshops, the development exercises will become increasingly more advanced. Experience with JavaScript, React, and Git will be necessary.
 
 ## System Requirements
 
@@ -52,11 +51,11 @@ variable and how to fix it here for [windows][win-path] or
 
 ## Setup
 
-> If you want to commit and push your work as you go, you'll want to
+> If you want to commit and push your work as you go, you’ll want to
 > [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 > first and then clone your fork rather than this repo directly.
 
-After you've made sure to have the pre-requisites installed, you
+After you’ve made sure to have the pre-requisites installed, you
 should be able to run a few commands to get set up:
 
 ```
@@ -66,21 +65,19 @@ yarn
 ```
 
 If you get any errors, please read through them and see if you can find out what
-the problem is. If you can't work it out on your own then please [file an
+the problem is. If you can’t work it out on your own then please [file an
 issue][issue] and provide _all_ the output from the commands you ran (even if
-it's a lot).
-
-You can also download the source code from GitHub as a ZIP file instead of using `git clone`: https://github.com/marcysutton/testing-accessibility-demos/archive/refs/heads/main.zip
+it’s a lot).
 
 ## Running the project locally
 
-This project contains various workshop files and a React web application. To get the app up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
+This monorepo contains various workshop files and a React web application. To get the app up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
 
 ```shell
 yarn start
 ```
 
-This should start the site for your browser at the address indicated in your Terminal, with an index page listing files for each workshop:
+This should start the site for your browser at the address indicated in your Terminal, with an index page listing files and sections for each workshop:
 `http://0.0.0.0:1234`
 
 ## Working through the exercises
@@ -91,7 +88,7 @@ This part of the project has one **before** folder with **after** files for each
 
 Here are the example source files for workshop 1:
 
-- [workshop1/start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercises-start)
+- [exercises-start](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercises-start)
 - [exercise1-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise1-keyboard)
 - [exercise2-devtools](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise2-devtools/)
 - [exercise3-extensions](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop1-manual-testing/exercise3-extensions/)
@@ -100,7 +97,9 @@ Here are the example source files for workshop 1:
 
 ### Workshop 2: Automated Accessibility Testing with JavaScript
 
-In workshop 2, we get more advanced with a React web application built out of the same umbrella codebase. There are folders for each of the examples for you to reference but the build will already be set up with the required tooling. The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
+In workshop 2, we get more advanced with a React web application built out of the same monorepo. There are folders for each of the sections and the build will already be set up with the required tooling.
+
+The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
 
 - [exercise0-storybook](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise0-storybook)
   - To start Storybook, run this command: `yarn storybook`
@@ -114,10 +113,10 @@ In workshop 2, we get more advanced with a React web application built out of th
   - Run Puppeteer with Jest: `yarn test:puppeteer`
 - [exercise5-ci](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise5-ci)
 
-This structure will allow you to iterate on working files with separate directories for the answers.
+This structure will allow you to iterate on working files with separate directories for the example sections.
 
 The purpose of an exercise is **not** for you to work through all the material.
-It's intended to get your brain thinking about the right questions to ask as
+It’s intended to get your brain thinking about the right questions to ask as
 we go through the material together.
 
 Contributions of any kind are welcome!
