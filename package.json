@@ -9,10 +9,11 @@
     "cypress:run": "npx cypress run",
     "test:e2e": "start-server-and-test start http://0.0.0.0:1234 cypress:open",
     "test:ci": "start-server-and-test start http://0.0.0.0:1234 cypress:run",
-    "test": "jest",
+    "test": "jest workshop2-automated-testing/components/* workshop2-automated-testing/exercise1-jest/*",
     "storybook": "start-storybook -h 0.0.0.0 -p 6006",
     "build-storybook": "build-storybook",
-    "test:components": "npx cypress open-ct"
+    "test:components": "npx cypress open-ct",
+    "test:puppeteer": "jest workshop2-automated-testing/exercise4-puppeteer/*"
   },
   "repository": {
     "type": "git",
@@ -66,9 +67,11 @@
     "cypress": "^9.0.0",
     "cypress-axe": "^0.13.0",
     "jest": "^27.3.1",
+    "jest-puppeteer": "^6.0.0",
     "jest-transform-css": "^2.1.0",
     "parcel": "^2.0.1",
     "posthtml-include": "^1.7.2",
+    "puppeteer": "^11.0.0",
     "react-test-renderer": "^17.0.2",
     "start-server-and-test": "^1.14.0",
     "webpack-dev-server": "^4.5.0"
@@ -83,23 +86,22 @@
     },
     "moduleDirectories": [
       "node_modules",
-      "src"
+      "workshop2-automated-testing/components"
     ],
     "moduleFileExtensions": [
       "js",
       "jsx"
     ],
     "moduleNameMapper": {
-      "^/(.*)$": "<rootDir>/src/$1"
+      "^/(.*)$": "<rootDir>/workshop2-automated-testing/components/$1"
     },
     "modulePathIgnorePatterns": [
-      "cypress",
-      "examples"
+      "cypress"
     ],
+    "preset": "jest-puppeteer",
     "setupFilesAfterEnv": [
       "<rootDir>/jest-setup.js"
     ],
-    "testEnvironment": "jest-environment-jsdom",
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css"

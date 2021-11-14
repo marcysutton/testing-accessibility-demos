@@ -111,6 +111,7 @@ In workshop 2, we get more advanced with a React web application built out of th
 - [exercise3-cypress-integration](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise3-cypress-integration)
   - Run Cypress integration tests: `yarn test:e2e`
 - [exercise4-puppeteer](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise4-puppeteer)
+  - Run Puppeteer with Jest: `yarn test:puppeteer`
 - [exercise5-ci](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise5-ci)
 
 This structure will allow you to iterate on working files with separate directories for the answers.

@@ -1,0 +1,134 @@
+{
+    "role": "RootWebArea",
+    "name": "CampSpots",
+    "children": [
+        {
+            "role": "generic",
+            "name": "",
+            "children": [
+                {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                        {
+                            "role": "generic",
+                            "name": "",
+                            "children": [
+                                {
+                                    "role": "generic",
+                                    "name": "",
+                                    "children": [
+                                        {
+                                            "role": "link",
+                                            "name": "CampSpots",
+                                            "children": [
+                                                {
+                                                    "role": "img",
+                                                    "name": ""
+                                                },
+                                                {
+                                                    "role": "StaticText",
+                                                    "name": "CampSpots"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "role": "navigation",
+                                    "name": "",
+                                    "children": [
+                                        {
+                                            "role": "generic",
+                                            "name": "",
+                                            "children": [
+                                                {
+                                                    "role": "button",
+                                                    "name": "Plan Your Trip",
+                                                    "children": [
+                                                        {
+                                                            "role": "StaticText",
+                                                            "name": "Plan Your Trip"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "role": "generic",
+                                            "name": "",
+                                            "children": [
+                                                {
+                                                    "role": "button",
+                                                    "name": "Ways to Stay",
+                                                    "children": [
+                                                        {
+                                                            "role": "StaticText",
+                                                            "name": "Ways to Stay"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "role": "generic",
+                                            "name": "",
+                                            "children": [
+                                                {
+                                                    "role": "button",
+                                                    "name": "Resources",
+                                                    "children": [
+                                                        {
+                                                            "role": "StaticText",
+                                                            "name": "Resources"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "role": "generic",
+                                    "name": "",
+                                    "children": [
+                                        {
+                                            "role": "link",
+                                            "name": "Login",
+                                            "children": [
+                                                {
+                                                    "role": "StaticText",
+                                                    "name": "Login"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "role": "main",
+                    "name": ""
+                },
+                {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                        {
+                            "role": "generic",
+                            "name": "",
+                            "children": [
+                                {
+                                    "role": "img",
+                                    "name": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
