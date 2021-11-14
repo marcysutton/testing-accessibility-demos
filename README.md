@@ -1,5 +1,5 @@
 <div>
-  <h1 align="center">✨ Build An Accessible Web App – Testing Accessibility ✨</h1>
+  <h1 align="center">✨ Testing Accessibility as Developers ✨</h1>
   <strong>
     Building accessible web applications with HTML, CSS, JavaScript, and React
   </strong>
