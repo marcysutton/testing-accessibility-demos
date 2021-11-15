@@ -96,6 +96,11 @@ button {
 }
 .three-parts .item {
     padding: 1em;
+
+    img {
+        display: inline-block;
+        margin-top: 1em;
+    }
 }
 .item.green {
     background-color: #EEFDF2;
@@ -143,6 +148,12 @@ button {
 }
 .form-field span.icon-lookingglass {
     background: url(/images/icons/icon-lookingglass.svg) no-repeat;
+}
+.form-field span.icon-lookingglass-white {
+    background: url(/images/icons/icon-lookingglass-white.svg) no-repeat;
+}
+.form-field button.btn-submit span.icon-lookingglass-white {
+    background-size: contain;
 }
 .form-field span.icon-calendar {
     background: url(/images/icons/icon-calendar.svg) no-repeat;
