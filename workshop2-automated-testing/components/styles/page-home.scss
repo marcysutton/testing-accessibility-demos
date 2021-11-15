@@ -55,6 +55,10 @@
     max-width: 300px;
 }
 @media screen and (max-width: 840px) {
+    .page-home #header {
+        background-size: cover;
+        min-height: 355px;
+    }
     .page-home .content-block-wrap img {
         margin-bottom: 1em;
     }

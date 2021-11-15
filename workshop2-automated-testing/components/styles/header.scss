@@ -15,6 +15,10 @@
     z-index: 1;
     width: 100%;
 }
+#header-logo h1 {
+    font-size: inherit;
+    margin: 0;
+}
 #header-logo a {
     align-items: center;
     color: inherit;

@@ -5,10 +5,13 @@
     position: absolute;
     width: 100%;
 }
+#header-megamenu h2 {
+    font-size: inherit;
+    margin: 0;
+}
 button.megamenu-navitem {
     background-color: transparent;
     border: none;
-    color: #928d8d;
     cursor: pointer;
     display: inline-block;
     font-size: 0.9rem;
@@ -78,13 +81,20 @@ button.megamenu-navitem {
 .megamenu-submenu-image-block a:focus {
     background-color: #4E4B48;
 }
-.megamenu-submenu-image-block a svg {
+.megamenu-submenu-image-block a svg,
+.megamenu-submenu-image-block a img {
     margin-right: 0.5em;
 }
 .megamenu-submenu-header {
+    font-size: inherit;
     font-weight: bold;
     margin-bottom: 1em;
+    margin-top: 0;
     text-transform: uppercase;
+}
+.megamenu-submenu ul {
+    margin: 0;
+    padding: 0;
 }
 .megamenu-submenu-link {
     align-items: center;
