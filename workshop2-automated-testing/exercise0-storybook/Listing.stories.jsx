@@ -7,6 +7,8 @@ export default {
   component: ListingExcerpt,
 }
 
+import imageFile from '/.storybook/assets/disneyland.jpg';
+
 const Template = args => <ListingExcerpt {...args} />;
 
 export const Default = Template.bind({});
@@ -16,9 +18,9 @@ Default.args = {
         listingName: "Disneyland",
         location: "Planet Earth",
         listingType: "Amusement Park",
-        imageSrc: "",
         excerpt: "The greatest place for families",
         amenities: ["wifi", "food", "tables", "bathrooms"]
-    }
+    },
+    image: imageFile,
 };
   

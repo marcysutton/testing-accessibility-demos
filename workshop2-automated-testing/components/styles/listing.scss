@@ -5,6 +5,10 @@
     grid-template-columns: 1fr 5fr;
     padding-bottom: 2em;
 
+    img {
+        max-width: 300px;
+    }
+
     header {
         align-items: flex-start;
         display: flex;
