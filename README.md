@@ -10,12 +10,12 @@
     applications, from the absolute basics with HTML and CSS to the tricky parts you’ll run into building and testing JavaScript-heavy components.
   </p>
 
-  <!-- <a href="https://testingaccessibility.com">
+  <a href="https://testingaccessibility.com">
     <img
-      alt="Learn Accessible Web Development from Start to Finish"
-      src="https://marcysutton.com/images/testingaccessibility-promo/ta-1.gif"
+      alt="Testing Accessibility Demos by Marcy Sutton"
+      src="./ta-promo-image.png"
     />
-  </a> -->
+  </a>
 </div>
 
 <hr />
