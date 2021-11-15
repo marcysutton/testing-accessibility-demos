@@ -1,4 +1,5 @@
 const path = require('path')
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   "stories": [
@@ -11,9 +12,29 @@ module.exports = {
   "webpackFinal": (config) => {
     config.module.rules.push({
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader'],
+      use: [{
+        loader: 'style-loader',
+       },{
+         loader: 'css-loader',
+         options: {
+          url: false,
+        }
+      },{
+          loader: 'sass-loader'
+      }],
       include: path.resolve(__dirname, '../'),
-    });
+    })
+    // Copy image assets to expose via CSS
+    config.plugins.push(
+      new CopyPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, "../images"),
+            to: "./images", 
+          },
+        ],
+      })
+    );
 
     config.resolve.alias = {
       components: path.resolve(__dirname, "../workshop2-automated-testing/components"),
