@@ -4,6 +4,8 @@ import SubNavButton from "./subnav-button"
 import SubNavContent from "./subnav-content"
 import navMap from "data/nav-map.json"
 
+import * as navImageMap from "../../../images/meganav/*.{jpg,svg}"
+
 const MegaNav = () => {
     const [activeMenu, setActiveMenu] = useState()
     const navRef = useRef()
@@ -51,7 +53,7 @@ const MegaNav = () => {
                     idRef="megamenu-item1"
                     onClick={(event) => { navItemClick(event, menu1) }}
                 />
-                <SubNavContent data={navMap.submenu1} />
+                <SubNavContent data={navMap.submenu1} imageMap={navImageMap} />
             </div>
             <div
                 className={`megamenu-section ${activeMenu === menu2 ? 'active' : ''}`}
@@ -63,7 +65,7 @@ const MegaNav = () => {
                     idRef="megamenu-item2"
                     onClick={(event) => { navItemClick(event, menu2) }}
                 />
-                <SubNavContent data={navMap.submenu2} />
+                <SubNavContent data={navMap.submenu2} imageMap={navImageMap} />
             </div>
             <div
                 className={`megamenu-section ${activeMenu === menu3 ? 'active' : ''}`}
@@ -75,7 +77,7 @@ const MegaNav = () => {
                     idRef="megamenu-item3"
                     onClick={(event) => { navItemClick(event, menu3) }}
                 />
-                <SubNavContent data={navMap.submenu3} />
+                <SubNavContent data={navMap.submenu3} imageMap={navImageMap} />
             </div>
         </nav>
     )

@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from 'prop-types'
+import LoadedImageUrl from "../utils/loaded-image-url"
 
 import SubNavGroup from './subnav-group'
 import SubNavImageBlock from './subnav-image-block'
 
-const SubNavContent = ({data = {}}) => {
+const SubNavContent = ({data = {}, imageMap = {}}) => {
     const linkGroups = data.linkGroups
     let imageLinkBlocks
     if (data.imageLinkBlocks) {
@@ -16,7 +17,9 @@ const SubNavContent = ({data = {}}) => {
                 return <SubNavGroup key={index} headerText={group.headerText} items={group.items} />
             })}
             {imageLinkBlocks && imageLinkBlocks.map((block, index) => {
-                return <SubNavImageBlock key={index} imgSrc={block.imgSrc} iconSrc={block.iconSrc} linkText={block.linkText} url={block.url} />
+                const imageUrl = LoadedImageUrl(imageMap, block.imgSrc)
+                const iconUrl = LoadedImageUrl(imageMap, block.iconSrc)
+                return <SubNavImageBlock key={index} imgSrc={imageUrl} iconSrc={iconUrl} linkText={block.linkText} url={block.url} />
             })}
         </div>
     )

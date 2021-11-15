@@ -33,13 +33,13 @@
         }], 
         "imageLinkBlocks": [{
             "linkText": "All sites",
-            "imgSrc": "/images/driving-map.jpg",
-            "iconSrc": "/images/icons/icon-nav-map.svg",
+            "imgSrc": "driving-map.jpg",
+            "iconSrc": "icon-nav-map.svg",
             "url": "#"
         }, {
             "linkText": "RV parks",
-            "imgSrc": "/images/rv-parks.jpg",
-            "iconSrc": "/images/icons/icon-nav-location.svg",
+            "imgSrc": "rv-parks.jpg",
+            "iconSrc": "icon-nav-location.svg",
             "url": "#"
         }]
     },

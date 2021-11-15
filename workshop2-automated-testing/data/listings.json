@@ -12,7 +12,7 @@
         "listingName": "Lake Wenatchee",
         "location": "Leavenworth, WA",
         "listingType": "State Park",
-        "imageSrc": "/images/lake-wenatchee.png",
+        "imageSrc": "lake-wenatchee.png",
         "excerpt": "A 20-mile drive from the Bavarian-themed mountain town of Leavenworth, Lake Wenatchee State Park is a sterling spot for recreation throughout the year. Hiking, biking, and horse riding can be enjoyed on the park's many trails, and the shallow lagoon of Lake Wenatchee is great for young swimmers and first-time paddleboarders. Other recreation...",
         "amenities": ["tables", "dock", "swimming"]
     }, {
@@ -20,7 +20,7 @@
         "listingName": "Colonial Creek",
         "listingType": "Tent site",
         "location": "North Cascades National Park",
-        "imageSrc": "/images/colonial-creek.png",
+        "imageSrc": "colonial-creek.png",
         "excerpt": "As one of the best campgrounds in North Cascades National Park and accessed via the seasonal North Cascades Highway, Colonial Creek Campground is one of the most popular bases to explore this rugged region of Washington. With a public boat ramp and pier that allows visitors to access the aquamarine waters of Diablo Lake, popular recrea...",
         "amenities": ["no-service", "tables", "dock", "swimming", "water", "bathrooms"]
     }, {
@@ -28,7 +28,7 @@
         "listingName": "Bowl and Pitcher",
         "listingType": "Campground",
         "location": "Riverside State Park, WA",
-        "imageSrc": "/images/bowl-and-pitcher.png",
+        "imageSrc": "bowl-and-pitcher.png",
         "excerpt": "Encompassing over 11,000 acres along the Little Spokane and Spokane Rivers, Riverside State Park is a centerpiece natural attraction of eastern Washington. Home to some of the best hiking trails and best campgrounds of Spokane, Riverside is split into different regions on the northwest side of the city. Appealing to a wide variety of outdoor interest...",
         "amenities": ["food", "tables", "bathrooms", "water", "swimming"]
     }, {
@@ -36,7 +36,7 @@
         "listingName": "Hoh Rain Forest",
         "location": "Olympic National Park",
         "listingType": "National Park",
-        "imageSrc": "/images/hoh-rain-forest.png",
+        "imageSrc": "hoh-rain-forest.png",
         "excerpt": "On the Olympic Peninsula of western Washington, the Hoh Rain Forest is an international tourist destination and unique environment found few other places in the world. The Hoh Rain Forest Campground offers 78 campsites to aid in multiple days of exploring this lush and inviting landscape. Campsites are granted on a first-come, first-served basis, with...",
         "amenities": ["food", "cabins", "tables", "bathrooms", "water", "ADA"]
     }]

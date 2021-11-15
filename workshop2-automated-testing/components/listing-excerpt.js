@@ -4,10 +4,8 @@ import PropTypes from "prop-types"
 import './styles/listing.scss'
 import './styles/icons.scss'
 
-const ListingExcerpt = ({data}) => {
-    const { listingName = '', location = '', listingType = '', imageSrc = '', excerpt = '', amenities = [] } = data
-    // Todo: figure out dynamic images since React throws an error with imageSrc
-    const image = require('/images/cranberry-lake.png')
+const ListingExcerpt = ({data, image}) => {
+    const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data
     return (
         <article className="listing-excerpt">
             <img src={image} alt="" />

@@ -50,6 +50,7 @@
     "@cypress/react": "^5.10.3",
     "@cypress/webpack-dev-server": "^1.7.0",
     "@emotion/babel-plugin": "^11.3.0",
+    "@parcel/resolver-glob": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.1",
     "@parcel/transformer-svg-react": "^2.0.1",
     "@storybook/addon-actions": "^6.3.12",
