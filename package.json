@@ -78,7 +78,8 @@
   },
   "alias": {
     "components": "./workshop2-automated-testing/components",
-    "images": "./images"
+    "images": "./images",
+    "data": "./workshop2-automated-testing/data"
   },
   "jest": {
     "globals": {

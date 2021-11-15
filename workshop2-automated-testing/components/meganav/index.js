@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import "./meganav.scss"
 import SubNavButton from "./subnav-button"
 import SubNavContent from "./subnav-content"
-import navMap from "./nav-map.json"
+import navMap from "data/nav-map.json"
 
 const MegaNav = () => {
     const [activeMenu, setActiveMenu] = useState()

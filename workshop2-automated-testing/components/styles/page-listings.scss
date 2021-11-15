@@ -1,0 +1,29 @@
+.page-listings {
+    background-color: var(--bgcolor-content-page);
+
+    .listings-header {
+        align-items: center;
+        display: flex;
+        margin-bottom: 1em;
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: normal;
+        }
+
+        select {
+            height: 2rem;
+            margin-left: auto;
+            width: 10rem;
+        }
+    }
+    .listings-list {
+        background-color: #fff;
+        padding-top: 0.5em;
+
+        .wide-section {
+            margin-top: 2em;
+            margin-bottom: 0;
+        }
+    }
+}
