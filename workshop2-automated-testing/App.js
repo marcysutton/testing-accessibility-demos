@@ -20,7 +20,7 @@ export function App() {
 			</Router>
 		</main>
 		<div id="footer">
-			<div className="section">
+			<div className="layout">
 				<div id="footer-logo">
 					<img src={imgFooterLogo} />
 				</div>

@@ -253,27 +253,27 @@ a:hover {
     min-height: 600px;
     position: relative;
 }
-.section {
+.layout {
     margin: 0em auto;
     padding: 4em 0.5em;
     width: var(--width-inset);
 }
-.wide-section {
+.wide-layout {
     margin: 4em auto;
     max-width: var(--width-wide);
     padding: 0 0.5em;
 }
 @media screen and (max-width: 780px) {
-    .section {
+    .layout {
         width: 100%;
     }
 }
 @media screen and (max-width: 640px) {
-    .section {
+    .layout {
         padding-bottom: 2em;
         padding-top: 2em;
     }
-    .wide-section {
+    .wide-layout {
         margin-bottom: 2em;
         margin-top: 2em;
     }
@@ -595,7 +595,7 @@ form h2 {
     min-height: 100px;
     padding: 0 0.5em 2em 0.5em; 
 }
-#footer .section {
+#footer .layout {
     padding-top: 2em;
 }
 #footer-logo {

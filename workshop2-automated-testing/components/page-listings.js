@@ -13,7 +13,7 @@ const ListingsPage = () =>  {
     return (
         <BodyClassName className="page-listings">
             <>
-                <div className="wide-section listings-header">
+                <div className="wide-layout listings-header">
                     <h1>Listings</h1>
                     <select>
                         <option>All site types</option>
@@ -24,7 +24,7 @@ const ListingsPage = () =>  {
                     </select>
                 </div>
                 <div className="listings-list">
-                    <section className="wide-section">
+                    <section className="wide-layout">
                     {ListingsData.listings.map((listing, index) => {
                         const imageUrl = LoadedImageUrl(imageURLs, listing.imageSrc)
                         return <ListingExcerpt data={listing} image={imageUrl} key={index} />

@@ -8,7 +8,7 @@ const AboutPage = () => {
     return (
         <BodyClassName className="page-about">
             <>
-                <div className="section two-parts-50-50">
+                <div className="layout two-parts-50-50">
                     <div className="content-block">
                         <h2>About CampSpots</h2>
                         <div>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</div>
@@ -18,7 +18,7 @@ const AboutPage = () => {
                     <img src={imgAbout} />
                 </div>
                 <div className="form-wrap">
-                    <div className="section two-parts-60-40">
+                    <div className="layout two-parts-60-40">
                         <div>
                             <h2>Contact</h2>
                             <div className="form">

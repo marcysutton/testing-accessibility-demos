@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <BodyClassName className="page-home">
             <>
-                <div className="form-wrap section">
+                <div className="form-wrap layout">
                     <div className="form-field">
                         <span className="label">Where to?</span>
                         <div className="custom-input">
@@ -31,7 +31,7 @@ const HomePage = () => {
                         </button>
                     </div>
                 </div>
-                <div className="wide-section two-part-overlap">
+                <div className="wide-layout two-part-overlap">
                     <div className="content-block-wrap">
                         <img src={imgTents} />
                         <div className="content-block">
@@ -59,7 +59,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="section three-parts">
+                <div className="layout three-parts">
                     <div className="item green">
                         <svg width="50" height="81" viewBox="0 0 50 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M37.367 60.327H11.712C11.16 60.327 10.712 60.774 10.712 61.327C10.712 61.88 11.16 62.327 11.712 62.327H37.366C37.918 62.327 38.366 61.88 38.366 61.327C38.366 60.774 37.919 60.327 37.367 60.327Z" fill="#165A2E"/>

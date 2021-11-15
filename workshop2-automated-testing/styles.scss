@@ -52,17 +52,17 @@ button {
     min-height: 600px;
     position: relative;
 }
-.section {
+.layout {
     margin: 0em auto;
     padding: 4em 0.5em;
     width: var(--width-inset);
 }
 @media screen and (max-width: 780px) {
-    .section {
+    .layout {
         width: 100%;
     }
 }
-.wide-section {
+.wide-layout {
     margin: 4em auto;
     max-width: var(--width-wide);
     padding: 0 0.5em;
@@ -216,7 +216,7 @@ button {
     min-height: 100px;
     padding: 0 0.5em 2em 0.5em; 
 }
-#footer .section {
+#footer .layout {
     padding-top: 2em;
 }
 #footer-logo {

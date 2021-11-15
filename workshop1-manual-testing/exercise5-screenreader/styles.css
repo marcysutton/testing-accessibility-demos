@@ -266,12 +266,12 @@ button.megamenu-navitem {
     min-height: 600px;
     position: relative;
 }
-.section {
+.layout {
     margin: 0em auto;
     padding: 4em 0.5em;
     width: var(--width-inset);
 }
-.wide-section {
+.wide-layout {
     margin: 4em auto;
     max-width: var(--width-wide);
     padding: 0 0.5em;
@@ -300,7 +300,7 @@ button.megamenu-navitem {
     text-align: center;
 }
 @media screen and (max-width: 780px) {
-    .section, section {
+    .layout, section {
         width: 100%;
     }
     .two-parts-50-50 {
@@ -585,7 +585,7 @@ button.megamenu-navitem {
     min-height: 100px;
     padding: 0 0.5em 2em 0.5em; 
 }
-#footer .section {
+#footer .layout {
     padding-top: 2em;
 }
 #footer-logo {
