@@ -2,6 +2,7 @@ import React from "react"
 import BodyClassName from 'react-body-classname'
 
 import './styles/page-home.scss'
+import SearchForm from "components/search-form"
 import imgTents from "images/tents.jpg"
 import iconTag from "images/icons/icon-treetag.svg"
 import iconBackpack from "images/icons/icon-backpack.svg"
@@ -11,27 +12,7 @@ const HomePage = () => {
     return (
         <BodyClassName className="page-home">
             <>
-                <div className="form-wrap layout">
-                    <div className="form-field">
-                        <span className="label">Where to?</span>
-                        <div className="custom-input">
-                            <span className="icon-lookingglass"></span>
-                            <input type="text" placeholder="Try Oregon, Colorado..." />
-                        </div>
-                    </div>
-                    <div className="form-field">
-                        <span className="label">Dates</span>
-                        <div className="custom-input">
-                            <span className="icon-calendar"></span>
-                            <input type="text" placeholder="Enter dates" />
-                        </div>
-                    </div>
-                    <div className="form-field form-submit">
-                        <button className="btn-submit btn-lookingglass" onClick={() => {alert('Submitted!')}}>
-                            <span className="icon-lookingglass-white"></span>
-                        </button>
-                    </div>
-                </div>
+                <SearchForm />
                 <div className="wide-layout two-part-overlap">
                     <div className="content-block-wrap">
                         <img src={imgTents} />
