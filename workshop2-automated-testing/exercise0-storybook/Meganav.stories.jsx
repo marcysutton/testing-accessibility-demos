@@ -7,4 +7,4 @@ export default {
   component: MegaNav,
 }
 
-export const Basic = () => <MegaNav />;
+export const Default = () => <MegaNav />;

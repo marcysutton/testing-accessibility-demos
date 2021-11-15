@@ -5,7 +5,7 @@ import './styles/listing.scss'
 import './styles/icons.scss'
 
 const ListingExcerpt = ({data}) => {
-    const { listingName, location, listingType, imageSrc, excerpt, amenities } = data
+    const { listingName = '', location = '', listingType = '', imageSrc = '', excerpt = '', amenities = [] } = data
     // Todo: figure out dynamic images since React throws an error with imageSrc
     const image = require('/images/cranberry-lake.png')
     return (

@@ -9,7 +9,6 @@ module.exports = {
     "@storybook/addon-essentials"
   ],
   "webpackFinal": (config) => {
-    // Make whatever fine-grained changes you need
     config.module.rules.push({
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
