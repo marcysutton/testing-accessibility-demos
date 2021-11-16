@@ -7,3 +7,9 @@ To start Storybook, run this command:
 ```
 yarn storybook
 ```
+
+## Exercise: Add a story for the DropdownList component
+
+Using the `ListingExcerpt.stories.jsx` file as a reference, create a
+new story in the same directory for the `DropdownList` component.
+It can be imported from the same directory as the `ListingExcerpt`.
