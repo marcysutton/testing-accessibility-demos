@@ -6,6 +6,7 @@ import './styles/page-listings.scss'
 
 import ListingsData from "data/listings.json"
 import ListingExcerpt from "components/listing-excerpt"
+import DropdownList from "components/dropdown-list"
 
 import * as imageURLs from '../../images/listings/*.{png,jpg}';
 
@@ -15,13 +16,7 @@ const ListingsPage = () =>  {
             <>
                 <div className="wide-layout listings-header">
                     <h1>Listings</h1>
-                    <select>
-                        <option>All site types</option>
-                        <option>Campgrounds</option>
-                        <option>Tent sites</option>
-                        <option>State parks</option>
-                        <option>National parks</option>
-                    </select>
+                    <DropdownList defaultItemText="All site types" items={["Campgrounds", "State Parks", "Tent sites", "National Parks"]} />
                 </div>
                 <div className="listings-list">
                     <section className="wide-layout">
