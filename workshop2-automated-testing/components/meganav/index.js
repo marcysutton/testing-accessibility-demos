@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { forwardRef, useEffect, useRef, useState } from "react"
 import "./meganav.scss"
 import SubNavButton from "./subnav-button"
 import SubNavContent from "./subnav-content"
-import navMap from "data/nav-map.json"
 
+import navMap from "data/nav-map.json"
 import * as navImageMap from "../../../images/meganav/*.{jpg,svg}"
 
 const MegaNav = () => {
@@ -34,53 +34,60 @@ const MegaNav = () => {
             setActiveMenu()
         }
     }
-    const navItemClick = (event, menuId) => {
-        if (activeMenu === menuId) {
-            setActiveMenu(false)
+    const navItemClick = (menuRef) => {
+        if (activeMenu === menuRef) {
+            setActiveMenu()
         } else {
-            setActiveMenu(menuId)
+            setActiveMenu(menuRef)
         }
     }
     return (
-        <nav id="header-megamenu" ref={navRef}>
-            <div
-                className={`megamenu-section ${activeMenu === menu1 ? 'active' : ''}`}
-                onKeyUp={(event) => { handleEscape(event) }}
+        <nav
+            id="header-megamenu"
+            onKeyUp={(event) => { handleEscape(event) }}
+            ref={navRef}
+        >
+            <MegaNavSection
+                activeMenu={activeMenu}
+                id="megamenu-section1"
+                buttonName="Plan Your Trip"
                 ref={menu1}
-            >
-                <SubNavButton
-                    buttonName="Plan Your Trip" 
-                    idRef="megamenu-item1"
-                    onClick={(event) => { navItemClick(event, menu1) }}
-                />
-                <SubNavContent data={navMap.submenu1} imageMap={navImageMap} />
-            </div>
-            <div
-                className={`megamenu-section ${activeMenu === menu2 ? 'active' : ''}`}
-                onKeyUp={(event) => { handleEscape(event) }}
+                onClick={() => { navItemClick(menu1) }}
+            />
+            <MegaNavSection
+                activeMenu={activeMenu}
+                id="megamenu-section2"
+                buttonName="Ways to Stay"
                 ref={menu2}
-            >
-                <SubNavButton
-                    buttonName="Ways to Stay" 
-                    idRef="megamenu-item2"
-                    onClick={(event) => { navItemClick(event, menu2) }}
-                />
-                <SubNavContent data={navMap.submenu2} imageMap={navImageMap} />
-            </div>
-            <div
-                className={`megamenu-section ${activeMenu === menu3 ? 'active' : ''}`}
-                onKeyUp={(event) => { handleEscape(event) }}
+                onClick={() => { navItemClick(menu2) }}
+            />
+            <MegaNavSection
+                activeMenu={activeMenu}
+                id="megamenu-section3"
+                buttonName="Resources"
                 ref={menu3}
-            >
-                <SubNavButton
-                    buttonName="Resources" 
-                    idRef="megamenu-item3"
-                    onClick={(event) => { navItemClick(event, menu3) }}
-                />
-                <SubNavContent data={navMap.submenu3} imageMap={navImageMap} />
-            </div>
+                onClick={() => { navItemClick(menu3) }}
+            />
         </nav>
     )
 }
-
 export default MegaNav
+
+const MegaNavSection = React.forwardRef((props, ref) => (
+    <div
+        className={`
+            megamenu-section
+            ${props.activeMenu === ref ? 'active' : ''}
+        `}
+        ref={ref}
+    >
+        <SubNavButton
+            aria-expanded={props.activeMenu === ref}
+            buttonName={props.buttonName}
+            idRef={props.id}
+            data-testid={props.id}
+            onClick={(ref) => { props.onClick(ref) }}
+        />
+        <SubNavContent data={navMap[props.id]} imageMap={navImageMap} />
+    </div>
+))

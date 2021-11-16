@@ -1,5 +1,5 @@
 {
-    "submenu1": {
+    "megamenu-section1": {
         "linkGroups": [{
             "headerText": "Find Your Adventure",
             "items": [{
@@ -43,7 +43,7 @@
             "url": "#"
         }]
     },
-    "submenu2": {
+    "megamenu-section2": {
         "linkGroups": [{
             "headerText": "Trip Types",
             "items": [{
@@ -73,7 +73,7 @@
             }]
         }]
     },
-    "submenu3": {
+    "megamenu-section3": {
         "linkGroups": [{
             "headerText": "Adventure Ideas",
             "items": [{

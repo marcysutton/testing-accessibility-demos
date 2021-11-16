@@ -20,16 +20,24 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                test: /\.scss$/i,
+                use: [{
+                    loader: 'style-loader',
+                   },{
+                     loader: 'css-loader',
+                     options: {
+                      url: false,
+                    }
+                  },{
+                      loader: 'sass-loader',
+                      options: {
+                        additionalData: "@import '/workshop2-automated-testing/variables.scss';"
+                      }
+                }]
             },
             {
                 test: /\.(png|jp(e*)g|svg|gif)$/,
                 use: ['file-loader'],
-            },
-            {
-                test: /\.svg$/,
-                use: ['@svgr/webpack'],
             },
         ]
     },

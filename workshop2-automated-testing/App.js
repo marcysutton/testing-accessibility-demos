@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import { Router } from "@reach/router"
+import './variables.scss'
 import './styles.scss'
 import Header from "components/header"
 import HomePage from "components/page-home"

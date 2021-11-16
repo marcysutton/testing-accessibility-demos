@@ -1,14 +1,16 @@
 import React from "react"
 import PropTypes from 'prop-types'
 
-const SubNavButton = ({buttonName = 'Nav Item', idRef, onClick}) => {
+const SubNavButton = (props) => {
     return (
         <button
+            aria-expanded={props['aria-expanded']}
             className="megamenu-navitem header-main-item" 
-            id={idRef}
-            onClick={(event) => { onClick(event) }}
+            id={props.idRef}
+            data-testid={props.idRef}
+            onClick={(event) => { props.onClick(event) }}
         >
-            {buttonName}
+            {props.buttonName}
         </button>
     )
 }

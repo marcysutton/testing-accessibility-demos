@@ -9,7 +9,7 @@ const SubNavGroup = ({headerText = '', items = []}) => {
             </div>
             {items.map((item, index) => (
                 <div className="megamenu-submenu-link" key={index}>
-                    <a href={item.url}>{item.name}</a>
+                    <a href={item.url} data-testid={`link-${index}`}>{item.name}</a>
                 </div>
             ))}
         </div>

@@ -20,7 +20,10 @@ module.exports = {
           url: false,
         }
       },{
-          loader: 'sass-loader'
+          loader: 'sass-loader',
+          options: {
+            additionalData: "@import '/workshop2-automated-testing/variables.scss';"
+          }
       }],
       include: path.resolve(__dirname, '../'),
     })
