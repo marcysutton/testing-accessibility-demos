@@ -13,12 +13,15 @@ const HomePage = () => {
     return (
         <BodyClassName className="page-home">
             <>
+                <Helmet>
+                    <title>Camp Spots</title>
+                </Helmet>
                 <SearchForm />
                 <div className="wide-layout two-part-overlap">
                     <div className="content-block-wrap">
-                        <img src={imgTents} />
+                        <img src={imgTents} alt="" />
                         <div className="content-block">
-                            <h3>Rest and relaxation is a part of life</h3>
+                            <h2>Rest and relaxation is a part of life</h2>
                             <div>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</div>
 
                             <div>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</div>
@@ -27,7 +30,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="link-block">
-                        <h4>Places to visit</h4>
+                        <h3>Places to visit</h3>
                         <div className="link-list">
                             <div>
                                 <a href="#">New York</a>

@@ -15,6 +15,9 @@ const ListingsPage = () =>  {
     return (
         <BodyClassName className="page-listings">
             <>
+                <Helmet>
+                    <title>Listings - Camp Spots</title>
+                </Helmet>
                 <div className="wide-layout listings-header">
                     <h1>Listings</h1>
                     <DropdownList defaultItemText="All site types" items={["Campgrounds", "State Parks", "Tent sites", "National Parks"]} />

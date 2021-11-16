@@ -9,6 +9,9 @@ const AboutPage = () => {
     return (
         <BodyClassName className="page-about">
             <>
+                <Helmet>
+                    <title>About Camp Spots</title>
+                </Helmet>
                 <div className="layout two-parts-50-50">
                     <div className="content-block">
                         <h2>About CampSpots</h2>

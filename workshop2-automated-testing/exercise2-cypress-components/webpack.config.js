@@ -3,6 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
+    devServer: {
+        // ignore cypress-axe circular dependency warning
+        client: {
+            overlay: {
+                warnings: false
+            }
+        }
+    },
     entry: path.join(__dirname, "/workshop2-automated-testing", "index.js"),
     output: {
         path:path.resolve(__dirname, "dist"),

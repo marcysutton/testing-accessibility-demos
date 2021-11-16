@@ -1,10 +1,8 @@
-import React, { forwardRef, useEffect, useRef, useState } from "react"
-import "./meganav.scss"
-import SubNavButton from "./subnav-button"
-import SubNavContent from "./subnav-content"
+import React, { useEffect, useRef, useState } from "react"
 
-import navMap from "data/nav-map.json"
-import * as navImageMap from "../../../images/meganav/*.{jpg,svg}"
+import "./meganav.scss"
+import MegaNavSection from "./meganav-section"
+
 
 const MegaNav = () => {
     const [activeMenu, setActiveMenu] = useState()
@@ -72,22 +70,3 @@ const MegaNav = () => {
     )
 }
 export default MegaNav
-
-const MegaNavSection = React.forwardRef((props, ref) => (
-    <div
-        className={`
-            megamenu-section
-            ${props.activeMenu === ref ? 'active' : ''}
-        `}
-        ref={ref}
-    >
-        <SubNavButton
-            aria-expanded={props.activeMenu === ref}
-            buttonName={props.buttonName}
-            idRef={props.id}
-            data-testid={props.id}
-            onClick={(ref) => { props.onClick(ref) }}
-        />
-        <SubNavContent data={navMap[props.id]} imageMap={navImageMap} />
-    </div>
-))

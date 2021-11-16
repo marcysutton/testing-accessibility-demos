@@ -8,7 +8,7 @@ describe('MegaNav', () => {
   })
 
   it('should operate with the keyboard via toggle buttons', () => {
-    cy.get('[data-testid="megamenu-section1"]').focus().click()
+    cy.get('button[data-testid="megamenu-section1"]').focus().click()
 
     cy.focused().should('have.attr', 'aria-expanded', 'true')
 
@@ -16,7 +16,7 @@ describe('MegaNav', () => {
   })
 
   it('submenus should not be reachable when closed', () => {
-    cy.get('[data-testid="megamenu-section1"]').focus().realPress('Tab')
+    cy.get('button[data-testid="megamenu-section1"]').focus().realPress('Tab')
 
     cy.focused().should('not.have.attr', '[data-testid="link-0"]')
     cy.focused().then(($el) => {
@@ -25,7 +25,7 @@ describe('MegaNav', () => {
   })
 
   it('should operate submenus with the keyboard', () => {
-    cy.get('[data-testid="megamenu-section2"]').focus().click()
+    cy.get('button[data-testid="megamenu-section2"]').focus().click()
 
     cy.focused().realPress('Tab')
 
