@@ -54,6 +54,7 @@ variable and how to fix it here for [windows][win-path] or
 > If you want to commit and push your work as you go, you’ll want to
 > [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 > first and then clone your fork rather than this repo directly.
+> Be sure to fetch the latest code on the day of the workshop by [syncing your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
 After you’ve made sure to have the pre-requisites installed, you
 should be able to run a few commands to get set up:
