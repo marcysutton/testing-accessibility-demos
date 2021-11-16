@@ -1,7 +1,7 @@
 import React from "react"
-import BodyClassName from 'react-body-classname'
+import BodyClassName from "react-body-classname"
 
-import './styles/page-home.scss'
+import "./styles/page-home.scss"
 import SearchForm from "components/search-form"
 import imgTents from "images/tents.jpg"
 import iconTag from "images/icons/icon-treetag.svg"

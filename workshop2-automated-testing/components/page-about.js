@@ -1,7 +1,7 @@
 import React from "react"
-import BodyClassName from 'react-body-classname'
+import BodyClassName from "react-body-classname"
 
-import './styles/page-about.scss'
+import "./styles/page-about.scss"
 import imgAbout from "images/about-image.jpg"
 
 const AboutPage = () => {

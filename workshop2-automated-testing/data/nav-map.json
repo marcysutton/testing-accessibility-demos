@@ -3,7 +3,7 @@
         "linkGroups": [{
             "headerText": "Find Your Adventure",
             "items": [{
-                "url": "listings",
+                "url": "/workshop2-automated-testing/listings",
                 "name": "Find a camping spot"
             }, {
                 "url": "#",

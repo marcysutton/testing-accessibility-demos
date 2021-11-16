@@ -2,7 +2,7 @@ import React from "react"
 import BodyClassName from "react-body-classname"
 import LoadedImageUrl from "./utils/loaded-image-url"
 
-import './styles/page-listings.scss'
+import "./styles/page-listings.scss"
 
 import ListingsData from "data/listings.json"
 import ListingExcerpt from "components/listing-excerpt"
