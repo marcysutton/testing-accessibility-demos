@@ -1,5 +1,7 @@
 import React from "react"
 
+import ButtonSubmit from "components/button-submit"
+
 const SearchForm = () => (
     <div className="form-wrap layout">
         <div className="form-field">
@@ -17,9 +19,7 @@ const SearchForm = () => (
             </div>
         </div>
         <div className="form-field form-submit">
-            <button className="btn-submit btn-lookingglass" onClick={() => {alert('Submitted!')}}>
-                <span className="icon-lookingglass-white"></span>
-            </button>
+            <ButtonSubmit onClick={()=> { console.log('Submit my stuff!') }} />
         </div>
     </div>
 )
