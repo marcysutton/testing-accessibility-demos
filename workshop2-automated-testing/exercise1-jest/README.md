@@ -30,3 +30,4 @@ API commands you can use:
 - [Testing Library: `getByRole`](https://testing-library.com/docs/queries/byrole)
 - [Testing Library: `getByLabelText`](https://testing-library.com/docs/queries/bylabeltext)
 - [Ecosystem/UserEvent](https://testing-library.com/docs/ecosystem-user-event)
+- [Jest-DOM matchers](https://github.com/testing-library/jest-dom)

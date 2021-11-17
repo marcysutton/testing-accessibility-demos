@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Icon from 'components/icon'
 import './styles/listing.scss'
 import './styles/icons.scss'
 
@@ -17,7 +18,9 @@ const ListingExcerpt = ({data, image}) => {
                     </div>
                     <ul className="amenity-icons">
                         {amenities.map((amenity, index) => {
-                            return <li key={index}><span className={`icon-${amenity}`}></span></li>
+                            return <li key={index}>
+                                <Icon name={amenity} />
+                            </li>
                         })}
                     </ul>
                 </header>
