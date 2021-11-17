@@ -33,5 +33,7 @@ jobs:
       run: yarn
     - name: Run unit tests
       run: yarn test
+    - name: Run Cypress component tests
+      run: yarn test:components
     - name: Run Cypress tests
-      run: yarn run test:ci
+      run: yarn test:ci
