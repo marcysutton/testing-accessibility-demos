@@ -36,8 +36,10 @@ ListingExcerpt.propTypes = {
         location: PropTypes.string,
         listingType: PropTypes.string,
         imageSrc: PropTypes.string,
-        excerpt: PropTypes.string
-    })
+        excerpt: PropTypes.string,
+        amenities: PropTypes.array
+    }),
+    image: PropTypes.string
 }
 
 export default ListingExcerpt
