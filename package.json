@@ -13,6 +13,7 @@
     "storybook": "start-storybook -h 0.0.0.0 -p 6006",
     "build-storybook": "build-storybook",
     "test:components": "npx cypress open-ct",
+    "test:components:ci": "npx cypress run-ct",
     "test:puppeteer": "jest workshop2-automated-testing/exercise4-puppeteer/*"
   },
   "repository": {
