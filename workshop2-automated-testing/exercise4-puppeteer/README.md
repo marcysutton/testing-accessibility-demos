@@ -5,5 +5,5 @@ Sometimes you need to throw another tool at the job to test for accessibility, a
 To start Puppeteer via Jest-Puppeteer, run this command:
 
 ```
-yarn run test:puppeteer
+yarn test:puppeteer
 ```

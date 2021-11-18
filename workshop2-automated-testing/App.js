@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React from "react"
 import { Router } from "@reach/router"
 import "./variables.scss"
 import "./styles.scss"
@@ -10,7 +10,6 @@ import ListingsPage from "components/page-listings"
 import imgFooterLogo from "/images/icons/footer-logo.svg"
 
 export function App() {
-
 	return <>
 		<Header />
 		<main id="main">

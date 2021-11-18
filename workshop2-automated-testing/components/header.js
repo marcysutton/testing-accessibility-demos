@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "@reach/router"
 import "./styles/header.scss"
 
 import CampSpotsLogo from "images/icons/camp-spots-logo.svg"
@@ -10,12 +9,12 @@ const Header = () => {
         <div id="header">
             <div id="header-nav">
                 <div id="header-logo">
-                    <Link to="/workshop2-automated-testing/" className="header-main-item">
+                    <a href="/workshop2-automated-testing/" className="header-main-item">
                         <span className="logo-img">
                             <img src={CampSpotsLogo} />
                         </span>
                         <span className="logo-text">CampSpots</span>
-                    </Link>
+                    </a>
                 </div>
                 <MegaNav />
                 <div id="header-login">

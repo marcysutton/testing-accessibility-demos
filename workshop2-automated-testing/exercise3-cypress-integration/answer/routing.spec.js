@@ -1,4 +1,4 @@
-describe("Client-side routing", () => {
+describe("Routing", () => {
     beforeEach(() => {
         cy.visit('http://0.0.0.0:1234/workshop2-automated-testing/')
 
@@ -13,7 +13,7 @@ describe("Client-side routing", () => {
         // test for title change
         cy.title().should('eq', 'About Camp Spots')
     })
-    xit('should move focus on a user-initiated page change', () => {
+    xit('should change the page via keyboard', () => {
         // this test will require more work with routing
 
         // open meganav
@@ -24,9 +24,7 @@ describe("Client-side routing", () => {
 
         // click first nav item for /listings page
         cy.focused().click()
-        
-        cy.focused().then(($el) => {
-            console.log($el)
-        })
+
+        cy.title().should('contain', 'Listings')
     })
 })
