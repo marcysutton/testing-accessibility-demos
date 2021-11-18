@@ -1,6 +1,7 @@
 import React from "react"
 import BodyClassName from "react-body-classname"
 import {Helmet} from "react-helmet"
+import HeadingPortal from "components/heading-portal"
 
 import "./styles/page-home.scss"
 import SearchForm from "components/search-form"
@@ -13,6 +14,9 @@ const HomePage = () => {
     return (
         <BodyClassName className="page-home">
             <>
+                <HeadingPortal>
+                    <h1 className="visually-hidden">Camp Spots</h1>
+                </HeadingPortal>
                 <SearchForm />
                 <div className="wide-layout two-part-overlap">
                     <div className="content-block-wrap">
