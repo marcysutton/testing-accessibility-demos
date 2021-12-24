@@ -114,6 +114,34 @@ The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
   - Run Puppeteer with Jest: `yarn test:puppeteer`
 - [exercise5-ci](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise5-ci)
 
+### Workshop 3: Semantics & ARIA
+
+In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice dictation and SEO.
+
+- exercise1-headings-landmarks
+- exercise2-what-is-aria
+- exercise3-accessible-names
+- exercise4-programmatic-accessibility
+- exercise5-what-is-aom
+### Workshop 4: Interactions & Mechanics
+
+Workshop 4 is my favorite topic in accessibility: user interactions and mechanics! We’ll dig into common patterns for keyboard interactions and how screen readers overlap. We’ll use JavaScript and advanced techniques to craft accessible experiences for a variety of user inputs.
+
+- exercise1-the-keyboard
+- exercise2-screen-reader-overlap
+- exercise3-focus-management-js
+- exercise4-announcements-with-at
+- exercise5-advanced-scripting-aria
+### Workshop 5: Design & People Skills
+
+In workshop 5, we’ll mix things up a bit to discuss topics that are necessary to solve accessibility problems but focus more on design thinking or culture and less on code.
+
+- exercise1-accessibility-as-ux
+- exercise2-designs-prototyping
+- exercise3-animation-motion
+- exercise4-finding-answers
+- exercise5-culture-of-accessibility
+
 This structure will allow you to iterate on working files with separate directories for the example sections.
 
 The purpose of an exercise is **not** for you to work through all the material.
