@@ -1,10 +1,10 @@
 import React from "react"
 import BodyClassName from "react-body-classname"
 import {Helmet} from "react-helmet"
-import HeadingPortal from "workshop2-components/heading-portal"
+import HeadingPortal from "workshop3-components/heading-portal"
 
 import "./styles/page-home.scss"
-import SearchForm from "workshop2-components/search-form"
+import SearchForm from "workshop3-components/search-form"
 import imgTents from "images/tents.jpg"
 import iconTag from "images/icons/icon-treetag.svg"
 import iconBackpack from "images/icons/icon-backpack.svg"

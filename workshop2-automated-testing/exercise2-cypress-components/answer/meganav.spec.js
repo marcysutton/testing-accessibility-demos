@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { mount } from '@cypress/react'
-import MegaNav from 'components/meganav/index'
+import MegaNav from 'workshop2-components/meganav/index'
 
 describe('MegaNav', () => {
   beforeEach(() => {

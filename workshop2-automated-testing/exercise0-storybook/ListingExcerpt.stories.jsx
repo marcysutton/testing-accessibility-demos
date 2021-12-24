@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ListingExcerpt from 'components/listing-excerpt';
+import ListingExcerpt from 'workshop2-components/listing-excerpt';
 
 import image from "../../.storybook/assets/disneyland.jpg"
 

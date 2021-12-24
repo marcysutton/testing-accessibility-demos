@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "@reach/router"
 
-import Icon from 'workshop2-components/icon'
+import Icon from 'workshop3-components/icon'
 import './styles/listing.scss'
 import './styles/icons.scss'
 
-const ListingExcerpt = ({data, image}) => {
+const ListingExcerpt = ({id, data, image}) => {
     const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data
     return (
         <article className="listing-excerpt">
@@ -26,7 +27,7 @@ const ListingExcerpt = ({data, image}) => {
                 </header>
                 <div>
                     <p>{excerpt}</p>
-                    <p><a href="">Read more</a></p>
+                    <p><Link to={`/workshop3-semantics-aria/listing/${id}`}>Read more</Link></p>
                 </div>
             </div>
         </article>    
@@ -34,6 +35,7 @@ const ListingExcerpt = ({data, image}) => {
 }
 
 ListingExcerpt.propTypes = {
+    id: PropTypes.string,
     data: PropTypes.shape({
         listingName: PropTypes.string,
         location: PropTypes.string,

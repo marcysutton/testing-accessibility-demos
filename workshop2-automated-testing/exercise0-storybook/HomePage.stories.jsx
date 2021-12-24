@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HomePage from 'components/page-home';
+import HomePage from 'workshop2-components/page-home';
 import * as HeaderStories from './Header.stories';
 
 export default {

@@ -51,9 +51,9 @@ module.exports = {
     },
     resolve: {
         alias: {
-            components: path.resolve(__dirname, "../components"),
-            images: path.resolve(__dirname, "../../images"),
-            data: path.resolve(__dirname, "../data")
+            "workshop2-components": path.resolve(__dirname, "../components"),
+            "workshop2-data": path.resolve(__dirname, "../data"),
+            images: path.resolve(__dirname, "../../images")
         }
     }
 }

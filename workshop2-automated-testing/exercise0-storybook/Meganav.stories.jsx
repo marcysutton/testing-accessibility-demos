@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MegaNav from 'components/meganav';
+import MegaNav from 'workshop2-components/meganav';
 
 export default {
   title: 'Components/MegaNav',

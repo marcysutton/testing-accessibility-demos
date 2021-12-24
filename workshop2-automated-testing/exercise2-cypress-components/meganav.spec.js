@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { mount } from '@cypress/react'
 
-import MegaNav from 'components/meganav'
+import MegaNav from 'workshop2-components/meganav'
 
 describe('MegaNav', () => {
     beforeEach(() => {

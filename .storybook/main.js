@@ -41,9 +41,9 @@ module.exports = {
     );
 
     config.resolve.alias = {
-      components: path.resolve(__dirname, "../workshop2-automated-testing/components"),
-      images: path.resolve(__dirname, "../images"),
-      data: path.resolve(__dirname, "../workshop2-automated-testing/data")
+      "workshop2-components": path.resolve(__dirname, "../workshop2-automated-testing/components"),
+      "workshop2-data": path.resolve(__dirname, "../workshop2-automated-testing/data"),
+      images: path.resolve(__dirname, "../images")
     }
 
     // Return the altered config

@@ -5,9 +5,9 @@ import LoadedImageUrl from "./utils/loaded-image-url"
 
 import "./styles/page-listings.scss"
 
-import ListingsData from "data/listings.json"
-import ListingExcerpt from "components/listing-excerpt"
-import DropdownList from "components/dropdown-list"
+import ListingsData from "workshop2-data/listings.json"
+import ListingExcerpt from "workshop2-components/listing-excerpt"
+import DropdownList from "workshop2-components/dropdown-list"
 
 import * as imageURLs from '../../images/listings/*.{png,jpg}';
 

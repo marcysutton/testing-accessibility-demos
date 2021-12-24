@@ -1,7 +1,7 @@
 import React from "react"
 import LoadedImageUrl from "../utils/loaded-image-url"
 
-import navMap from "workshop2-data/nav-map.json"
+import navMap from "workshop3-data/nav-map.json"
 import * as imageMap from "../../../images/meganav/*.{jpg,svg}"
 
 import SubNavButton from './subnav-button'

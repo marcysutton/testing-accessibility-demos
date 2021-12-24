@@ -1,6 +1,6 @@
 import React from "react"
 
-import ButtonSubmit from "workshop2-components/button-submit"
+import ButtonSubmit from "workshop3-components/button-submit"
 
 const SearchForm = () => (
     <div className="form-wrap layout">

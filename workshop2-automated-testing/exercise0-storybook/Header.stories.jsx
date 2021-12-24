@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from 'components/header';
+import Header from 'workshop2-components/header';
 
 export default {
   title: 'Components/Header',
