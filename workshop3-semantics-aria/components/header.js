@@ -6,12 +6,12 @@ import MegaNav from "./meganav/"
 
 const Header = () => {
     return (
-        <div id="header">
+        <header id="header">
             <div id="header-nav">
                 <div id="header-logo">
                     <a href="/workshop3-semantics-aria/" className="header-main-item">
                         <span className="logo-img">
-                            <img src={CampSpotsLogo} />
+                            <img src={CampSpotsLogo} alt="" />
                         </span>
                         <span className="logo-text">CampSpots</span>
                     </a>
@@ -21,7 +21,7 @@ const Header = () => {
                     <a href="#">Login</a>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

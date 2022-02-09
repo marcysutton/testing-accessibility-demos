@@ -40,10 +40,10 @@
     background-color: #F8F8F8;
     margin-left: auto;
     max-width: 620px;
-    padding: 1.5em 1.5em 4.5em 4.5em;
+    padding: 1.5em 1.5em 8.5em 6.5em;
     width: 100%;
 }
-.page-home .content-block div {
+.page-home .content-block p {
     color: #4A4B49;
     font-size: 1rem;
     margin: 1em 0;
@@ -75,9 +75,17 @@
     }
 }
 .page-home .link-list {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.15em 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
 }
 .page-home .link-list a {
     color: #4A4B49;
@@ -86,7 +94,7 @@
     padding: 0.25em 0;
     text-decoration: none;
 }
-.page-home .link-list a:before {
+.page-home .link-list a span:before {
     color: var(--color-accent-dark);
     content: '\02C6';
     display: inline-block;

@@ -4,7 +4,6 @@ import { Link } from "@reach/router"
 
 import Icon from 'workshop3-components/icon'
 import './styles/listing.scss'
-import './styles/icons.scss'
 
 const ListingExcerpt = ({id, data, image}) => {
     const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data

@@ -21,12 +21,12 @@ export function App() {
 				<Listing path="/workshop3-semantics-aria/listing/:id" />
 			</Router>
 		</main>
-		<div id="footer">
+		<footer id="footer">
 			<div className="layout">
 				<div id="footer-logo">
-					<img src={imgFooterLogo} />
+					<img src={imgFooterLogo} alt="CampSpots" />
 				</div>
 			</div>
-		</div>
+		</footer>
 	</>
 }

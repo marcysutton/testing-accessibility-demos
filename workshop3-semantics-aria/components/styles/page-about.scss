@@ -8,17 +8,18 @@
     background-color: var(--bgcolor-form);
     padding-bottom: 3em;
 }
-.page-about .form-wrap h6 {
-    margin-bottom: 0.5em;
-}
-.page-about .content-block div {
+.page-about .content-block p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1em;
 }
+.page-about .content-block h3 {
+    font-weight: normal;
+}
 .page-about .content-block .contact {
     align-items: flex-start;
     display: flex;
+    font-style: normal;
 }
 .page-about .content-block [class^='icon-'] {
     display: inline-block;

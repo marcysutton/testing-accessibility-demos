@@ -18,30 +18,30 @@
             font-size: 1.25rem;
             margin: 0;
         }
-        .amenity-icons {
-            display: flex;
-            list-style: none;
-            margin-left: auto;
-            margin-top: 0;
-            padding: 0;
-
-            li {
-                margin-top: 0;
-                margin-left: 0.25em;
-            }
-            span[class^='icon-'] {
-                background-color: #F8F9FA;
-                border: 1px solid #E6EBEF;
-                border-radius: 3px;
-                display: inline-block;
-                height: 2rem;
-                width: 2rem;
-            }
-        }
     }
     p {
         font-size: 0.9rem;
         line-height: 1.5;
         margin: 0;
+    }
+}
+.amenity-icons {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-top: 0;
+    padding: 0;
+
+    li {
+        margin-top: 0;
+        margin-left: 0.25em;
+    }
+    span[class^='icon-'] {
+        background-color: #F8F9FA;
+        border: 1px solid #E6EBEF;
+        border-radius: 3px;
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
     }
 }

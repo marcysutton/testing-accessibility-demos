@@ -14,18 +14,27 @@ html, body {
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 16px;
+}
 body {
-    font-size: 24px;
     font-family: var(--global-font-family);
     margin: 0;
     min-width: 320px;
+}
+h1 {
+    font-weight: normal;
 }
 h2 {
     font-size: 2rem;
     font-weight: normal;
 }
-h3 {
+h3, .h3-style {
+    font-weight: normal;
     font-size: 1.5rem;
+}
+h4, .h4-style {
+    font-size: 1rem;
 }
 h4, h5, h6 {
     font-weight: normal;
@@ -78,6 +87,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+    list-style: none;
     text-align: center;
 }
 @media screen and (max-width: 540px) {
@@ -87,6 +97,7 @@ button {
     }
 }
 .three-parts .item {
+    margin: 0;
     padding: 1em;
 
     img {
@@ -125,6 +136,8 @@ button {
 }
 .form-field .label,
 .form-field label {
+    display: block;
+    margin-bottom: 0.5em;
     font-weight: 500;
     font-size: 1rem;
 }
