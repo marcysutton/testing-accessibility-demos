@@ -23,7 +23,7 @@ const ListingsPage = () =>  {
                     <section className="wide-layout">
                     {
                     Object.entries(ListingsData.listings).map((listing, index) => {
-                        const imageUrl = LoadedImageUrl(imageURLs, listing[1].imageSrc)
+                        const imageUrl = LoadedImageUrl(imageURLs, listing[1].excerptImageSrc)
                         return (
                             <ListingExcerpt id={listing[0]} data={listing[1]} image={imageUrl} key={index} />
                         )

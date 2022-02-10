@@ -1,7 +1,12 @@
 /* Header and Mega-Nav */
 #header {
     padding-top: 1em;
-    position: relative;
+}
+.header-overlap #header {
+    padding-top: 3em;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 #header-nav {
     background-color: var(--bgcolor-header);

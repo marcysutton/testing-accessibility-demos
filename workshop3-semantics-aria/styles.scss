@@ -21,6 +21,7 @@ body {
     font-family: var(--global-font-family);
     margin: 0;
     min-width: 320px;
+    position: relative;
 }
 h1 {
     font-weight: normal;
@@ -68,20 +69,33 @@ button {
     max-width: var(--width-wide);
     padding: 0 0.5em;
 }
-.two-parts-50-50 {
+.header-overlap .page-header .wide-layout {
+    margin-top: 0;
+}
+.header-overlap .page-header {
+    margin: 0 auto;
+    max-width: 1152px;
+    min-height: 485px;
+}
+[class*='two-parts'] {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 4em;
+}
+.two-parts-50-50 {
+    grid-template-columns: 1fr 1fr;
 }
 .two-parts-50-50 img {
     text-align: right;
 }
 .two-parts-60-40 {
-    align-items: center;
-    display: grid;
     grid-template-columns: 6fr 4fr;
-    gap: 4em;
+}
+.two-parts-70-30 {
+    grid-template-columns: 7fr 3fr;
+}
+.two-parts-80-20 {
+    grid-template-columns: 8fr 2fr;
 }
 .three-parts {
     display: grid;

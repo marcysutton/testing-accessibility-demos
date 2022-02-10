@@ -9,7 +9,9 @@ const ListingExcerpt = ({id, data, image}) => {
     const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data
     return (
         <article className="listing-excerpt">
-            <img src={image} alt="" />
+            <Link to={`/workshop3-semantics-aria/listing/${id}`}>
+                <img src={image} alt={listingName} />
+            </Link>
             <div>
                 <header>
                     <div>
@@ -26,7 +28,7 @@ const ListingExcerpt = ({id, data, image}) => {
                 </header>
                 <div>
                     <p>{excerpt}</p>
-                    <p><Link to={`/workshop3-semantics-aria/listing/${id}`}>Read more</Link></p>
+                    <p><Link to={`/workshop3-semantics-aria/listing/${id}`} aria-label={`Read more about ${listingName}`}>Read more</Link></p>
                 </div>
             </div>
         </article>    

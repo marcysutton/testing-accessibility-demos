@@ -1,0 +1,57 @@
+.date-picker {
+    width: 100%;
+
+    button {
+        -webkit-appearance: none;
+    }
+
+    header {
+        align-items: center;
+        display: flex;
+        padding: 2em 0;
+
+        h3 {
+            margin: 0 auto;
+            text-align: center;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            display: flex;
+
+            &.btn-prev span:before {
+                content: '<';
+                margin-right: 0.25em;
+            }
+            &.btn-next span:after {
+                content: ' >';
+                margin-left: 0.25em;
+            }
+        }
+    }
+}
+.days-of-week,
+.date-grid {
+    display: grid;
+    gap: 0.25em;
+    grid-template-columns: repeat(7, 1fr);
+
+    span {
+        display: block;
+        padding: 0.5em;
+        text-align: center;
+    }
+}
+.date-grid {
+    button {
+        background-color: var(--bgcolor-date-button);
+        border: 1px solid var(--color-border-button);
+        cursor: pointer;
+        padding: 0.5em;
+    }
+    button:not(.currentMonth) {
+        background-color: transparent;
+        border: none;
+        opacity: 0.4;
+    }
+}

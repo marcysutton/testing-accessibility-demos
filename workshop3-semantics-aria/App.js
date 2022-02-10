@@ -6,7 +6,7 @@ import Header from "workshop3-components/header"
 import HomePage from "workshop3-components/page-home"
 import AboutPage from "workshop3-components/page-about"
 import ListingsPage from "workshop3-components/page-listings"
-import Listing from "workshop3-components/page-listing"
+import Listing from "workshop3-components/page-listing-detail"
 
 import imgFooterLogo from "/images/icons/footer-logo.svg"
 

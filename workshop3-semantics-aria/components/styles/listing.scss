@@ -25,6 +25,17 @@
         margin: 0;
     }
 }
+.page-listing-detail .page-header {
+    .page-header-content {
+        color: var(--color-primary-light);
+        display: grid;
+        grid-template-rows: 8fr 1fr;
+
+        & :first-child {
+            margin-top: auto;
+        }
+    }
+}
 .amenity-icons {
     display: flex;
     list-style: none;
