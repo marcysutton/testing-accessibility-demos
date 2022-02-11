@@ -59,11 +59,6 @@ button {
     padding: 4em 0.5em;
     width: var(--width-inset);
 }
-@media screen and (max-width: 780px) {
-    .layout {
-        width: 100%;
-    }
-}
 .wide-layout {
     margin: 4em auto;
     max-width: var(--width-wide);
@@ -73,6 +68,7 @@ button {
     margin-top: 0;
 }
 .header-overlap .page-header {
+    background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 1152px;
     min-height: 485px;
@@ -104,10 +100,26 @@ button {
     list-style: none;
     text-align: center;
 }
+@media screen and (max-width: 780px) {
+    .layout {
+        width: 100%;
+    }
+    [class*='two-parts'] {
+        display: block;
+    }
+    .two-parts-50-50 .content-block {
+        margin-bottom: 2em;
+    }
+}
 @media screen and (max-width: 540px) {
     .three-parts {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr 1fr; 
+    }
+}
+@media screen and (max-width: 420px) {
+    .three-parts {
+        display: block;
     }
 }
 .three-parts .item {

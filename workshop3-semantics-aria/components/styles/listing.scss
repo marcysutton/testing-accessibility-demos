@@ -25,14 +25,21 @@
         margin: 0;
     }
 }
-.page-listing-detail .page-header {
-    .page-header-content {
-        color: var(--color-primary-light);
-        display: grid;
-        grid-template-rows: 8fr 1fr;
+.page-listing-detail {
+    .page-header {
+        .page-header-content {
+            color: var(--color-primary-light);
+            display: grid;
+            grid-template-rows: 8fr 1fr;
 
-        & :first-child {
-            margin-top: auto;
+            & :first-child {
+                margin-top: auto;
+            }
+        }
+    }
+    .detail-images {
+        img {
+            max-width: 100%;
         }
     }
 }
