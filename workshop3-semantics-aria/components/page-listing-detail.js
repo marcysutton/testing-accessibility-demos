@@ -46,8 +46,9 @@ const Listing = props => {
                         <div>
                             Calendar
                             <DatePicker />
-                            <div className="calendar-btn">Reserve</div>
                         </div>
+                    </div>
+                    <div className="wide-layout">
                         <div className="detail-images">
                             {data.detailImages.map((image, index) => {
                                 let detailImageUrl = LoadedImageUrl(imageURLs, image.imageSrc)

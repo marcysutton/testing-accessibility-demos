@@ -30,28 +30,107 @@
         }
     }
 }
+.days-of-week span {
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+}
 .days-of-week,
 .date-grid {
     display: grid;
     gap: 0.25em;
     grid-template-columns: repeat(7, 1fr);
-
-    span {
-        display: block;
-        padding: 0.5em;
-        text-align: center;
-    }
 }
-.date-grid {
-    button {
+.date-grid,
+.date-key {
+    button,
+    .date-key-item {
         background-color: var(--bgcolor-date-button);
         border: 1px solid var(--color-border-button);
         cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
         padding: 0.5em;
+
+        span.icon:after {
+            border-bottom: 1px solid transparent;
+            content: '';
+            display: block;
+            padding-bottom: 0.15em;
+        }
     }
     button:not(.currentMonth) {
         background-color: transparent;
         border: none;
         opacity: 0.4;
     }
+    .booked {
+        background-color: #FFE0E2;
+        border: 1px solid #F8F9FA;
+        color: #B61335;
+        cursor: not-allowed;
+        position: relative;
+
+        span.icon:after {
+            content: '•';
+            font-size: 0.65rem;
+            line-height: 1;
+            margin-right: 0.15em;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .selected {
+        background-color: var(--color-accent-dark);
+        color: var(--color-primary-light);
+
+        span.icon:after {
+            border-bottom: 1px solid currentColor;
+            content: '';
+            display: block;
+            padding-bottom: 0.15em;
+            width: 100%;
+        }
+    }
+}
+.date-key {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    justify-content: space-between;
+
+    .date-key-item-wrap {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .date-key-item {
+        margin-right: 0.25em;
+    }
+    .icon {
+        cursor: default;
+        display: block;
+        height: 0.25rem;
+        line-height: 1;
+        width: 0.25rem;
+    }
+    .date-key-text {
+        font-size: 0.9rem;
+    }
+}
+.reserve-btn {
+    background-color: var(--color-accent-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--color-primary-light);
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 2em;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
 }

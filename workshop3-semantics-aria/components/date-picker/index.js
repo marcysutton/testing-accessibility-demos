@@ -19,14 +19,15 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
     const startYear = dayjs(activeDate).format("YYYY")
     const startMonth = dayjs(activeDate).format("M")
 
-    let activeMonthDays = createActiveMonthDays(startYear, startMonth)
-    let prevMonthDays = createPrevMonthDays(startYear, startMonth, activeMonthDays)
-    let nextMonthDays = createNextMonthDays(startYear, startMonth, activeMonthDays)
+    // this collection of dates would come from a database, etc.
+    let initUnavailableDates = ['2022-04-10', '2022-04-11', '2022-04-12', '2022-04-14', '2022-04-15', '2022-04-17', '2022-04-18', '2022-04-19', '2022-04-24', '2022-04-25', '2022-04-27']
+    let activeMonthDays = createActiveMonthDays(startYear, startMonth, initUnavailableDates)
+    let prevMonthDays = createPrevMonthDays(startYear, startMonth, activeMonthDays, initUnavailableDates)
+    let nextMonthDays = createNextMonthDays(startYear, startMonth, activeMonthDays, initUnavailableDates)
 
     let days = [...prevMonthDays, ...activeMonthDays, ...nextMonthDays]
-    // this array of dates could come from a database, etc.
-    let initUnavailableDates = []
     let [unavailableDates, setUnavailableDates] = useState(initUnavailableDates)
+    let [selectedDates, setSelectedDates] = useState([])
 
     const setPrevMonth = () => {
         // only go backward as far as current month
@@ -40,14 +41,31 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
     const isPrevMonthAvailable = () => {
         return dayjs(activeDate).subtract(1, 'month').get('month') >= dayjs().get('month')
     }
+    const isDayUnavailable = (day) => {
+        return unavailableDates.includes(day.date)
+    }
+    const bookDay = (day) => {
+        // this function would run on "Reserve"
+        setUnavailableDates(
+            unavailableDates => [day.date, ...unavailableDates, `${unavailableDates.length}`]
+        )
+    }
+    const isDaySelected = (day) => {
+        return selectedDates.includes(day.date)
+    }
     const selectDay = (day) => {
         // to-do: consider perf of this for large quanitites of dates
-        console.log(unavailableDates)
-
-        if (!unavailableDates.includes(day.date)) {
-            setUnavailableDates(
-                unavailableDates => [...unavailableDates, `${unavailableDates.length}`]
-            )
+        if (!isDayUnavailable(day)) {
+            // add to selected Dates if not already selected
+            if (!isDaySelected(day)) {
+                setSelectedDates(
+                    selectedDates => [day.date, ...selectedDates]
+                )
+            } else {
+                setSelectedDates(
+                    selectedDates.filter(date => date !== day.date)
+                )
+            }
         }
     }
     return (
@@ -83,16 +101,39 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                 {days.map((day, index) => {
                     return <button
                         className={[
+                            day.isBooked ? 'booked' : '',
                             day.isCurrentMonth ? 'currentMonth' : '',
-                            day.isSelected ? 'active' : ''
-                        ].join('')}
+                            isDaySelected(day) ? 'selected' : ''
+                        ].join(' ').trim()}
                         key={index}
                         onClick={() => selectDay(day)}
                     >
                         <time date-time={day.date}>{day.dayOfMonth}</time>
+                        <span className="icon" aria-hidden="true"></span>
                     </button>
                 })}
             </div>
+            <div className="date-key">
+                <div className="date-key-item-wrap">
+                    <span className="date-key-item booked">
+                        <span className="icon" aria-hidden="true"></span>
+                    </span>
+                    <span className="date-key-text">Booked</span>
+                </div>
+                <div className="date-key-item-wrap">
+                    <span className="date-key-item available">
+                        <span className="icon" aria-hidden="true"></span>
+                    </span>
+                    <span className="date-key-text">Available</span>
+                </div>
+                <div className="date-key-item-wrap">
+                    <span className="date-key-item selected">
+                        <span className="icon" aria-hidden="true"></span>
+                    </span>
+                    <span className="date-key-text">Selected</span>
+                </div>
+            </div>
+            <div className="reserve-btn">Reserve</div>
         </div>
     )
 }
