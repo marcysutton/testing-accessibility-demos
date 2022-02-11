@@ -10,7 +10,7 @@ of support in browsers and assistive technologies.
 
 ## Exercise: Build the listing detail page template with semantics and heading structure
 
-Using the completed `page-listing-detail.jsx` file in `exercise1-headings-landmarks`
+Using the completed `page-listing-detail.js` file in `exercise1-headings-landmarks`
 as a reference, build the Page Listing Detail template in `components` for a campground
 using semantic landmarks and headings.
 
