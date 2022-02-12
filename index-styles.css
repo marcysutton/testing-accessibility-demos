@@ -31,7 +31,10 @@ main {
     padding: 0 1em;
     max-width: 540px;
 }
-main h2, main p {
+#resources main {
+    max-width: 900px;
+}
+main h2, main h3, main p {
     text-align: center;
 }
 main details {
@@ -43,14 +46,28 @@ main details summary {
 main .exercise-list {
     list-style: none;
 }
+#resources main .exercise-list {
+    columns: 2;
+    gap: 3em;
+    list-style: initial;
+}
 main .exercise-list > li {
     border-bottom: 2px solid #ddd;
     margin-bottom: 1em;
     margin-top: 1em;
     padding-bottom: 1em;
 }
+#resources main .exercise-list > li {
+    border-bottom: none;
+    margin-top: 0;
+}
 footer {
     font-size: 1rem;
     margin: 2em 0;
     text-align: center;
+}
+@media screen and (max-width: 640px) {
+    #resources main .exercise-list {
+        columns: 1;
+    }
 }
