@@ -4,7 +4,7 @@ Naming things is hard. Here you'll learn the about crafting accessible names and
 
 An accessible name exposes a unique name for an interactive element or landmark to describe its purpose. Things that can contribute to an accessible name include `textContent` (including children), `aria-label`, `aria-labelledby`, a `label` paired with a form control, and even `title` or 
 `placeholder`. How text is exposed as an accessible name is determined by the Accessible Name
-and Description Calculation specification, found in [https://www.w3.org/TR/accname-1.2/].
+and Description Calculation specification, found in https://www.w3.org/TR/accname-1.2/.
 
 A note about `placeholder`: these aren't good to rely on for labeling as they aren't
 visually persistent. Even though placeholder is technically exposed as a last resort and passes

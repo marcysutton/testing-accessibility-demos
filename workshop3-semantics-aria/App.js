@@ -20,7 +20,7 @@ export function App() {
 				<AboutPage path="/workshop3-semantics-aria/about" />
 				<ListingsPage path="/workshop3-semantics-aria/listings" />
 				<Listing path="/workshop3-semantics-aria/listing/:id" />
-				<SemanticsExercise path="/workshop3-semantics-aria/exercise1/:id" />
+				<SemanticsExercise path="/workshop3-semantics-aria/exercise/:id" />
 			</Router>
 		</main>
 		<footer id="footer">

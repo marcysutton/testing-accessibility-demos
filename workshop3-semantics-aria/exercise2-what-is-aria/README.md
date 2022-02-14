@@ -2,7 +2,7 @@
 
 The first rule of ARIA (Accessible Rich Internet Applications) is "Don't use ARIA". When the time comes and you do need it, you'll want to know you're doing it right. This part of the workshop discusses the various roles, states, and properties of ARIA. In addition, you'll learn about accessibility APIs and how assistive technologies interact with web applications.
 
-ARIA comes from a specification that you can visit and bookmark in your browser: [https://www.w3.org/TR/wai-aria-1.1/]
+ARIA comes from a specification that you can visit and bookmark in your browser: https://www.w3.org/TR/wai-aria-1.1/
 
 The specification lists a standard set of attributes that you can plumb into your webpages for accessibility information. "Standard" means you can't make up your own attributes, and there are requirements for using them on specific elements or in combinations.
 
@@ -22,5 +22,5 @@ and test your changes in the browser with VoiceOver or NVDA.
 
 You can view the before and after components on the Listing pages:
 
-- [http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake]
-- [http://0.0.0.0:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake]
+- http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
+- http://0.0.0.0:1234/workshop3-semantics-aria/exercise/listing-cranberry-lake

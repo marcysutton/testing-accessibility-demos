@@ -5,7 +5,7 @@ Just as we have the Document Object Model (DOM) and CSS Object Model (CSSOM), we
 The AOM is a potential set of APIs in development in the Web Incubator Community Group (WICG). The
 intent is to standardize approaches for getting and setting accessibility information with JavaScript
 as opposed to the current approach of applying accessibility information with HTML and ARIA. Browser
-makers use these community-grown standards approaches to inform what they build into their technologies. The AOM repo can be found here: [https://github.com/WICG/aom]
+makers use these community-grown standards approaches to inform what they build into their technologies. The AOM repo can be found here: https://github.com/WICG/aom
 
 As developers and technologists, it's helpful to know what is being discussed and on the horizon.
 It should also be understood that AOM is an experimental, future technology currently
@@ -13,7 +13,7 @@ with limited use. Parts of the proposals have also met some valid resistance due
 concerns around event tracking of screen readers.
 
 View what can currently be used in Chrome, Firefox, or Safari:
-[https://github.com/WICG/aom/blob/gh-pages/caniuse.md]
+https://github.com/WICG/aom/blob/gh-pages/caniuse.md
 
 ## How to enable AOM
 
