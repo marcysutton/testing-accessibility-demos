@@ -20,7 +20,7 @@ purpose of your graphical elements. Use text labels with your icons, or at least
 Using the `<Icon>` component, play with different approaches for exposing an accessible name.
 The goal is to add a name to the component that reflects the graphic icon inside.
 
-You can compare the "before" `icon.js` component with the completed one in `exercise3-accessible-naming`.
+You can compare the "before" `icon.js` component with the completed one in `exercise3-accessible-names`.
 
 There are a few approaches for exposing a name for an icon:
 

@@ -116,13 +116,13 @@ The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
 
 ### Workshop 3: Semantics & ARIA
 
-In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice dictation and SEO.
+In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice navigation and SEO.
 
-- exercise1-headings-landmarks
-- exercise2-what-is-aria
-- exercise3-accessible-names
-- exercise4-programmatic-accessibility
-- exercise5-what-is-aom
+- [exercise1-headings-landmarks](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise1-headings-landmarks)
+- [exercise2-what-is-aria](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise2-what-is-aria)
+- [exercise3-accessible-names](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise3-accessible-names)
+- [exercise4-programmatic-a11y-info](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise4-programmatic-a11y-info)
+- [exercise5-what-is-aom](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise5-what-is-aom)
 ### Workshop 4: Interactions & Mechanics
 
 Workshop 4 is my favorite topic in accessibility: user interactions and mechanics! We’ll dig into common patterns for keyboard interactions and how screen readers overlap. We’ll use JavaScript and advanced techniques to craft accessible experiences for a variety of user inputs.
