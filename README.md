@@ -118,6 +118,9 @@ The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
 
 In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice navigation and SEO.
 
+In this workshop, we will primarily work on site listings and associated components. The URL for workshop 3 is:
+`http://0.0.0.0:1234/workshop3-semantics-aria`
+
 - [exercise1-headings-landmarks](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise1-headings-landmarks)
 - [exercise2-what-is-aria](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise2-what-is-aria)
 - [exercise3-accessible-names](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise3-accessible-names)
