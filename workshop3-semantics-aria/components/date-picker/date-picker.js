@@ -79,7 +79,7 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                     <span></span>
                     { dayjs(activeDate).subtract(1, "month").format("MMM") }
                 </button>
-                <h3>{ dayjs(activeDate).format("MMMM YYYY") }</h3>
+                <h4>{ dayjs(activeDate).format("MMMM YYYY") }</h4>
                 <button
                     className="btn-next"
                     onClick={setNextMonth}

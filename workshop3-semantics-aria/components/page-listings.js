@@ -5,18 +5,22 @@ import LoadedImageUrl from "./utils/loaded-image-url"
 
 import "./styles/page-listings.scss"
 
+import HeadingPortal from "workshop3-components/heading-portal"
 import ListingsData from "workshop3-data/listings.json"
 import ListingExcerpt from "workshop3-components/listing-excerpt"
 import DropdownList from "workshop3-components/dropdown-list"
 
-import * as imageURLs from '../../images/listings/*.{png,jpg}';
+import * as imageURLs from "../../images/listings/*.{png,jpg}"
 
 const ListingsPage = () =>  {
     return (
         <BodyClassName className="page-listings">
             <>
+                <HeadingPortal>
+                    <h1 className="visually-hidden">Camp Spots</h1>
+                </HeadingPortal>
                 <div className="wide-layout listings-header">
-                    <h1>Listings</h1>
+                    <h2>Listings</h2>
                     <DropdownList defaultItemText="All site types" items={["Campgrounds", "State Parks", "Tent sites", "National Parks"]} />
                 </div>
                 <div className="listings-list">

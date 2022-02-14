@@ -90,7 +90,7 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                     <span aria-hidden="true"></span>
                     { dayjs(activeDate).subtract(1, "month").format("MMM") }
                 </button>
-                <h3 id="month">{ dayjs(activeDate).format("MMMM YYYY") }</h3>
+                <h4 id="month">{ dayjs(activeDate).format("MMMM YYYY") }</h4>
                 <button
                     aria-label={`Next month ${dayjs(activeDate).add(1, "month").format("MMMM")}`}
                     className="btn-next"

@@ -1,16 +1,16 @@
 import React from "react"
 import BodyClassName from "react-body-classname"
-import sanitizeHtml from 'sanitize-html'
+import sanitizeHtml from "sanitize-html"
 import {Helmet} from "react-helmet"
 import LoadedImageUrl from "./utils/loaded-image-url"
 
 import "./styles/page-listings.scss"
 
-import Icon from 'workshop3-components/icon'
+import Icon from "workshop3-components/icon"
 import ListingsData from "workshop3-data/listings.json"
-import DatePicker from 'workshop3-components/date-picker/date-picker'
+import DatePicker from "workshop3-components/date-picker/date-picker"
 
-import * as imageURLs from '../../images/listings/*.{png,jpg}';
+import * as imageURLs from "../../images/listings/*.{png,jpg}"
 
 const Listing = props => {
     const data = ListingsData.listings[props.id]
@@ -19,7 +19,6 @@ const Listing = props => {
         <BodyClassName className="header-overlap page-listing-detail">
             <>
                 <div>
-
                     <div
                         className="page-header"
                         style={{backgroundImage: `url(${headerImageUrl}`}}
