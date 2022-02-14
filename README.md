@@ -65,10 +65,19 @@ cd testing-accessibility-demos
 yarn
 ```
 
-If you get any errors, please read through them and see if you can find out what
-the problem is. If you can’t work it out on your own then please [file an
-issue][issue] and provide _all_ the output from the commands you ran (even if
-it’s a lot).
+There are periodic changes to this repo. To update your local build, run:
+
+```
+git pull
+```
+
+Note: if you have local changes, you'll need to commit them to a branch. Here's
+some extra help on using Git: [https://www.freecodecamp.org/news/git-pull-explained/]
+
+If you get any errors when building the site, please read through them and see if
+you can find out what the problem is. If you can’t work it out on your own then
+please [file an issue][issue] and provide _all_ the output from the commands you ran
+(even if it’s a lot).
 
 ## Running the project locally
 
