@@ -89,13 +89,13 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                 </button>
             </header>
             <div className="days-of-week">
-                <span>S</span>
-                <span>M</span>
-                <span>T</span>
-                <span>W</span>
-                <span>T</span>
-                <span>F</span>
-                <span>S</span>
+                <span title="Sunday">S</span>
+                <span title="Monday">M</span>
+                <span title="Tuesday">T</span>
+                <span title="Wednesday">W</span>
+                <span title="Thursday">T</span>
+                <span title="Friday">F</span>
+                <span title="Saturday">S</span>
             </div>
             <div className="date-grid">
                 {days.map((day, index) => {

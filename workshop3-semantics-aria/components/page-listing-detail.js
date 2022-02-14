@@ -1,5 +1,6 @@
 import React from "react"
 import BodyClassName from "react-body-classname"
+import sanitizeHtml from 'sanitize-html'
 import {Helmet} from "react-helmet"
 import LoadedImageUrl from "./utils/loaded-image-url"
 
@@ -7,7 +8,7 @@ import "./styles/page-listings.scss"
 
 import Icon from 'workshop3-components/icon'
 import ListingsData from "workshop3-data/listings.json"
-import DatePicker from 'workshop3-components/date-picker'
+import DatePicker from 'workshop3-components/date-picker/date-picker'
 
 import * as imageURLs from '../../images/listings/*.{png,jpg}';
 
@@ -24,21 +25,20 @@ const Listing = props => {
                         style={{backgroundImage: `url(${headerImageUrl}`}}
                     >
                         <div className="page-header-content wide-layout">
-                            <div>{data.listingName}</div>
-                            <p>{data.location}</p>
+                            <div className="listing-name">{data.listingName}</div>
+                            <p className="location">{data.location}</p>
                         </div>
                     </div>
                     <div className="wide-layout two-parts-70-30">
                         <div>
                             <div>Description</div>
-                            <p>{data.excerpt}</p>
+                            <div className="description-text" dangerouslySetInnerHTML={{__html: sanitizeHtml(data.description)}} />
 
                             Amenities
-                            <div className="amenity-icons">
+                            <div className="amenity-icons grid">
                             {data.amenities.map((amenity, index) => {
                                 return <div key={index}>
-                                    <Icon name={amenity} />
-                                    <span>{amenity}</span>
+                                    <Icon name={amenity} showText={true} />
                                 </div>
                             })}
                             </div>

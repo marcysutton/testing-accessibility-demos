@@ -18,6 +18,7 @@
             background-color: transparent;
             border: none;
             display: flex;
+            font-size: 0.8rem;
 
             &.btn-prev span:before {
                 content: '<';
@@ -29,17 +30,28 @@
             }
         }
     }
+    table {
+        border-spacing: 0;
+        width: 100%;
+    }
 }
-.days-of-week span {
-    display: block;
+.days-of-week * {
+    font-weight: normal;
     padding: 0.5em;
     text-align: center;
 }
-.days-of-week,
-.date-grid {
+.days-of-week span {
+    display: block;
+}
+div.days-of-week,
+div.date-grid {
     display: grid;
     gap: 0.25em;
     grid-template-columns: repeat(7, 1fr);
+}
+.date-grid button {
+    height: 100%;
+    width: 100%;
 }
 .date-grid,
 .date-key {
@@ -48,6 +60,7 @@
         background-color: var(--bgcolor-date-button);
         border: 1px solid var(--color-border-button);
         cursor: pointer;
+        display: block;
         font-size: 1rem;
         font-weight: bold;
         padding: 0.5em 0.25em 0.25em;
@@ -66,9 +79,9 @@
         border: none;
     }
     .booked {
-        background-color: #FFE0E2;
-        border: 1px solid #F8F9FA;
-        color: #B61335;
+        background-color: var(--bgcolor-datepicker-booked);
+        border: 1px solid var(--bgcolor-date-button);
+        color: var(--color-accent-error);
         cursor: not-allowed;
         position: relative;
 

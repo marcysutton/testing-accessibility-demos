@@ -4,9 +4,16 @@
     background-color: var(--bgcolor-content-page);
     padding-bottom: 6em;
 }
+.page-about section.intro {
+    align-items: center;
+}
 .page-about .form-wrap {
     background-color: var(--bgcolor-form);
     padding-bottom: 3em;
+}
+.page-about .form-wrap h2,
+.page-about .form-wrap h3:first-of-type {
+    margin-top: 0;
 }
 .page-about .content-block p {
     font-size: 1rem;

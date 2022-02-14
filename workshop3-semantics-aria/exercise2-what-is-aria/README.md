@@ -8,9 +8,8 @@ The specification lists a standard set of attributes that you can plumb into you
 
 ## Exercise: Inspect date picker grid with ARIA roles vs. tables
 
-Using the completed `date-picker-table.js` and `date-picker-grid.js` files in
-`exercise2-what-is-aria` as a reference, play around with the semantics of the
-date picker calendar.
+Using the completed `date-picker.js` file in `exercise2-what-is-aria` as
+a reference, play around with the semantics of the date picker calendar.
 
 There are three approaches to compare in DevTools and assisitve technology:
 
@@ -18,5 +17,10 @@ There are three approaches to compare in DevTools and assisitve technology:
 - An HTML table with rows for weeks in the calendar and cells for the days
 - An HTML table with ARIA grid roles bolted on top
 
-Apply one or more of these approaches to the live page in `components/page-listing-detail.js`
+Apply one or more of these approaches to the component in `components/date-picker/date-picker.js`
 and test your changes in the browser with VoiceOver or NVDA.
+
+You can view the before and after components on the Listing pages:
+
+- [http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake]
+- [http://0.0.0.0:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake]

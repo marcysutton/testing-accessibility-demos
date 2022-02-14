@@ -17,14 +17,17 @@ purpose of your graphical elements. Use text labels with your icons, or at least
 
 ## Exercise: Write an accessible name for an icon button in two ways
 
-Using the `<IconButton>` component, play with different approaches for exposing an accessible name.
-The goal is to add a name to the interactive button that reflects the graphic icon inside.
+Using the `<Icon>` component, play with different approaches for exposing an accessible name.
+The goal is to add a name to the component that reflects the graphic icon inside.
 
-There are a few approaches for exposing a name for an icon button:
+You can compare the "before" `icon.js` component with the completed one in `exercise3-accessible-naming`.
 
-- Put an `aria-label` on the button itself
-- Put an `aria-label` on a graphical child element like an `img` or a `span[role=img]`
+There are a few approaches for exposing a name for an icon:
+
+- If wrapped in a button, put an `aria-label` on the button itself
+- Put an `aria-label` on a graphical icon child element like an `img` or a `span[role=img]`
 - Use a `.visually-hidden` span or other child element with `textContent` inside
+(source in [`styles.scss`](https://github.com/marcysutton/testing-accessibility-demos/blob/main/workshop3-semantics-aria/styles.scss#L4))
 
 There are even more options when the icon is SVG. If the element provides rich content, it can
 contain text that is exposed as a name. If the SVG is essentially an image, you can use the same

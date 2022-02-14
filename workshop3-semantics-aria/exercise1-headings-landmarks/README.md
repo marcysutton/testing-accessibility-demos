@@ -17,3 +17,8 @@ using semantic landmarks and headings.
 The application already has dynamic routing set up for each of the campgrounds listed in
 `data/listings.json`. You can get to the campground listings from "Plan Your Trip >
 Find a Camping Spot" in the main navigation, and the individual listing details from there.
+
+Or visit the before and after pages by URL:
+
+- [http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake]
+- [http://0.0.0.0:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake]

@@ -7,6 +7,7 @@ import HomePage from "workshop3-components/page-home"
 import AboutPage from "workshop3-components/page-about"
 import ListingsPage from "workshop3-components/page-listings"
 import Listing from "workshop3-components/page-listing-detail"
+import SemanticsExercise from "./exercise1-headings-landmarks/page-listing-detail"
 
 import imgFooterLogo from "/images/icons/footer-logo.svg"
 
@@ -19,6 +20,7 @@ export function App() {
 				<AboutPage path="/workshop3-semantics-aria/about" />
 				<ListingsPage path="/workshop3-semantics-aria/listings" />
 				<Listing path="/workshop3-semantics-aria/listing/:id" />
+				<SemanticsExercise path="/workshop3-semantics-aria/exercise1/:id" />
 			</Router>
 		</main>
 		<footer id="footer">

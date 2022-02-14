@@ -9,7 +9,7 @@ const AboutPage = () => {
     return (
         <BodyClassName className="page-about">
             <>
-                <section className="layout two-parts-50-50" aria-labelledby="heading-about-1">
+                <section className="intro layout two-parts-50-50" aria-labelledby="heading-about-1">
                     <div className="content-block">
                         <h1 id="heading-about-1">About CampSpots</h1>
                         <p>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</p>

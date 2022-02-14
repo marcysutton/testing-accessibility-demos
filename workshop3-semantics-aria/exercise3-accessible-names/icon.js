@@ -20,12 +20,15 @@ const Icon = ({name, showText = false}) => {
             onFocus={tooltip ? showTooltip : null}
         >
             <span
+                aria-label={name}
                 className={`icon-${name}`}
+                role="img"
             >
             </span>
             { showText ? <span className="text">{name}</span> : null }
             { tooltip ?
                 <span
+                    aria-hidden="true"
                     className={
                         `tooltip ${!showText && tooltipActive ? `active` : `` }`}
                 >
