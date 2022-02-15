@@ -6,21 +6,20 @@ ARIA comes from a specification that you can visit and bookmark in your browser:
 
 The specification lists a standard set of attributes that you can plumb into your webpages for accessibility information. "Standard" means you can't make up your own attributes, and there are requirements for using them on specific elements or in combinations.
 
-## Exercise: Inspect date picker grid with ARIA roles vs. tables
+## Exercise: Inspect date picker with DIVs and buttons, add states & properties
 
-Using the completed `date-picker.js` file in `exercise2-what-is-aria` as
-a reference, play around with the semantics of the date picker calendar.
+Using the `date-picker.js` file in `exercise2-what-is-aria` as
+a reference, play around with the semantics of the date picker. For this
+exercise, pay close attention to roles, states, and properties.
 
-There are three approaches to compare in DevTools and assisitve technology:
+As you navigate the original date picker with a screen reader, pay close attention to how the month and date buttons are announced. Are you able to
+reach and operate them? Is it clear which dates are already
+booked or selected? How might you communicate that information with ARIA?
 
-- A group of button elements for each of the days
-- An HTML table with rows for weeks in the calendar and cells for the days
-- An HTML table with ARIA grid roles bolted on top
+Make changes to the component in `components/date-picker/date-picker.js`
+and test your changes in the browser with VoiceOver and/or NVDA.
 
-Apply one or more of these approaches to the component in `components/date-picker/date-picker.js`
-and test your changes in the browser with VoiceOver or NVDA.
-
-You can view the before and after components on the Listing pages:
+You can test the before and after components on the Listing pages here:
 
 - http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
-- http://0.0.0.0:1234/workshop3-semantics-aria/exercise/listing-cranberry-lake
+- http://0.0.0.0:1234/workshop3-semantics-aria/exercise2/listing-cranberry-lake

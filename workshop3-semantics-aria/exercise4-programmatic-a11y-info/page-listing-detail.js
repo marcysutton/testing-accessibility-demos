@@ -7,9 +7,9 @@ import LoadedImageUrl from "workshop3-components/utils/loaded-image-url"
 import "workshop3-components/styles/page-listings.scss"
 
 import HeadingPortal from "workshop3-components/heading-portal"
-import Icon from "workshop3-components/icon"
+import Icon from "../exercise3-accessible-names/icon"
 import ListingsData from "workshop3-data/listings.json"
-import DatePicker from "workshop3-components/date-picker/date-picker"
+import DatePicker from "./date-picker"
 
 import * as imageURLs from "../../images/listings/*.{png,jpg}"
 

@@ -71,22 +71,22 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
     return (
         <div className="date-picker">
             <header>
-                <button
-                    className="btn-prev"
+                <div
+                    className="btn-month btn-prev"
                     disabled={isPrevMonthAvailable() ? '' : 'disabled'}
                     onClick={setPrevMonth}
                 >
                     <span></span>
                     { dayjs(activeDate).subtract(1, "month").format("MMM") }
-                </button>
+                </div>
                 <h4>{ dayjs(activeDate).format("MMMM YYYY") }</h4>
-                <button
-                    className="btn-next"
+                <div
+                    className="btn-month btn-next"
                     onClick={setNextMonth}
                 >
                     { dayjs(activeDate).add(1, 'month').format("MMM") }
                     <span></span>
-                </button>
+                </div>
             </header>
             <div className="days-of-week">
                 <span title="Sunday">S</span>
@@ -99,8 +99,9 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
             </div>
             <div className="date-grid">
                 {days.map((day, index) => {
-                    return <button
+                    return <div
                         className={[
+                            'grid-btn',
                             day.isBooked ? 'booked' : '',
                             day.isCurrentMonth ? 'currentMonth' : '',
                             isDaySelected(day) ? 'selected' : ''
@@ -110,7 +111,7 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                     >
                         <time date-time={day.date}>{day.dayOfMonth}</time>
                         <span className="icon" aria-hidden="true"></span>
-                    </button>
+                    </div>
                 })}
             </div>
             <div className="date-key">

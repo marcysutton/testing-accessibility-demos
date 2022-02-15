@@ -33,3 +33,10 @@ There are even more options when the icon is SVG. If the element provides rich c
 contain text that is exposed as a name. If the SVG is essentially an image, you can use the same
 graphical image approach as above. Or you can decide to mark the SVG with `role=presentation` and
 let the wrapping button element provide a name somehow.
+
+You can visit the before and after pages containing icon components by URL:
+
+- http://0.0.0.0:1234/workshop3-semantics-aria/listings
+- http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
+- http://0.0.0.0:1234/workshop3-semantics-aria/exercise3/listing-cranberry-lake
+- http://0.0.0.0:1234/workshop3-semantics-aria/exercise3/listings

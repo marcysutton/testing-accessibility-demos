@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import './styles/icons.scss'
+import 'workshop3-components/styles/icons.scss'
 
 const Icon = ({name, showText = false}) => {
     const StaticOrInteractive = showText ? `span` : `button`

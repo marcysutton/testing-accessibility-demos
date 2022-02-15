@@ -10,10 +10,18 @@ Examples include:
 - Various dynamic states: `aria-checked`, `aria-selected`, `aria-disabled`, `aria-pressed`, etc.
 - Structural relationships and owned elements: `role=grid` and `role=gridcell`, `role=menu` and `role=menuitem`
 
-## Exercise: Connect CampSpots listings with associated map
+## Exercise: Expose calendar grid relationships and labels for non-visual access
 
-Using the completed `page-listing-map.js` file in `exercise3-programmatic-a11y-info`
-as a reference, adjust the Page Listings Map page in `components` to associate listings
-with locations on the map.
+Using the `date-picker.js` file in `exercise4-programmatic-a11y-info` for
+reference, play around with the semantics of the date picker. For this
+exercise, pay close attention to the structure and accessible names.
 
-Techniques include:
+There are multiple approaches to compare in DevTools and assistive technology:
+
+- A DIV with CSS grid and buttons for the calendar
+- An HTML table with rows for weeks in the calendar and cells for the date buttons
+
+Convert the date picker DIV grid to an HTML table. Using `aria-labelledby` on
+the table, describe its purpose (which month is showing?). Do the table headers
+for the days of the week make sense as abbreviated? How might you expose more
+descriptive names for these cells?

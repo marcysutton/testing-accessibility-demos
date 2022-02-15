@@ -82,45 +82,54 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
         <div className="date-picker">
             <header>
                 <button
+                    aria-label={`Previous month ${dayjs(activeDate).subtract(1, "month").format("MMMM")}`}
                     className="btn-month btn-prev"
                     disabled={isPrevMonthAvailable() ? '' : 'disabled'}
                     onClick={setPrevMonth}
                 >
-                    <span></span>
+                    <span aria-hidden="true"></span>
                     { dayjs(activeDate).subtract(1, "month").format("MMM") }
                 </button>
-                <h4>{ dayjs(activeDate).format("MMMM YYYY") }</h4>
+                <h4 id="month">{ dayjs(activeDate).format("MMMM YYYY") }</h4>
                 <button
+                    aria-label={`Next month ${dayjs(activeDate).add(1, "month").format("MMMM")}`}
                     className="btn-month btn-next"
                     onClick={setNextMonth}
                 >
                     { dayjs(activeDate).add(1, 'month').format("MMM") }
-                    <span></span>
+                    <span aria-hidden="true"></span>
                 </button>
             </header>
-            <table>
+            <table aria-labelledby="month">
                 <thead>
                     <tr className="days-of-week">
                         <th scope="col">
-                            <span>S</span>
+                            <span aria-hidden="true" role="presentation">S</span>
+                            <span className="visually-hidden">Sunday</span>
                         </th>
                         <th scope="col">
-                            <span>M</span>
+                            <span aria-hidden="true" role="presentation">M</span>
+                            <span className="visually-hidden">Monday</span>
                         </th>
                         <th scope="col">
-                            <span>T</span>
+                            <span aria-hidden="true" role="presentation">T</span>
+                            <span className="visually-hidden">Tuesday</span>
                         </th>
                         <th scope="col">
-                            <span>W</span>
+                            <span aria-hidden="true" role="presentation">W</span>
+                            <span className="visually-hidden">Wednesday</span>
                         </th>
                         <th scope="col">
-                            <span>T</span>
+                            <span aria-hidden="true" role="presentation">T</span>
+                            <span className="visually-hidden">Thursday</span>
                         </th>
                         <th scope="col">
-                            <span>F</span>
+                            <span aria-hidden="true" role="presentation">F</span>
+                            <span className="visually-hidden">Friday</span>
                         </th>
                         <th scope="col">
-                            <span>S</span>
+                            <span aria-hidden="true" role="presentation">S</span>
+                            <span className="visually-hidden">Saturday</span>
                         </th>
                     </tr>
                 </thead>

@@ -15,9 +15,10 @@
             margin: 0 auto;
             text-align: center;
         }
-        button {
+        .btn-month {
             background-color: transparent;
             border: none;
+            cursor: pointer;
             display: flex;
             font-size: 0.8rem;
 
@@ -50,13 +51,13 @@ div.date-grid {
     gap: 0.25em;
     grid-template-columns: repeat(7, 1fr);
 }
-.date-grid button {
+.date-grid .grid-btn {
     height: 100%;
     width: 100%;
 }
 .date-grid,
 .date-key {
-    button,
+    .grid-btn,
     .date-key-item {
         background-color: var(--bgcolor-date-button);
         border: 1px solid var(--color-border-button);
@@ -72,10 +73,10 @@ div.date-grid {
             display: block;
         }
     }
-    button:not(.currentMonth) {
+    .grid-btn:not(.currentMonth) {
         opacity: 0.4;
     }
-    button:not(.currentMonth):not(.booked):not(.selected) {
+    .grid-btn:not(.currentMonth):not(.booked):not(.selected) {
         background-color: transparent;
         border: none;
     }
@@ -111,8 +112,9 @@ div.date-grid {
 .date-key {
     display: flex;
     flex-direction: row;
-    margin: 1em 0;
     justify-content: space-between;
+    margin: 1em 0;
+    padding: 0;
 
     .date-key-item-wrap {
         align-items: center;
