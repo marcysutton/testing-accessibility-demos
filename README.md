@@ -90,6 +90,8 @@ yarn start
 This should start the site for your browser at the address indicated in your Terminal, with an index page listing files and sections for each workshop:
 `http://0.0.0.0:1234`
 
+Tip: If you're running the build on Windows (WSL) and the above host name won't resolve, try localhost: `http://localhost:1234`
+
 ## Working through the exercises
 
 ### Workshop 1: Manual Testing & Tools
