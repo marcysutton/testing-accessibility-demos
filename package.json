@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility workshop series",
   "scripts": {
-    "start": "parcel index.html 'workshop1-manual-testing' workshop2-automated-testing/index.html workshop3-semantics-aria/index.html --host=0.0.0.0",
+    "start": "parcel index.html workshop1-manual-testing workshop2-automated-testing/index.html workshop3-semantics-aria/index.html --host=0.0.0.0",
     "build": "parcel build",
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run",
