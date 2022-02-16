@@ -1,6 +1,6 @@
 describe("Routing", () => {
     beforeEach(() => {
-        cy.visit('http://0.0.0.0:1234/workshop2-automated-testing/')
+        cy.visit('http://localhost:1234/workshop2-automated-testing/')
 
         cy.get("#header")
     })
@@ -8,7 +8,7 @@ describe("Routing", () => {
         // This test requires changes with React Helmet
         cy.title().should('eq', 'Camp Spots')
 
-        cy.visit('http://0.0.0.0:1234/workshop2-automated-testing/about')
+        cy.visit('http://localhost:1234/workshop2-automated-testing/about')
 
         // test for title change
         cy.title().should('eq', 'About Camp Spots')

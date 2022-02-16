@@ -88,15 +88,13 @@ yarn start
 ```
 
 This should start the site for your browser at the address indicated in your Terminal, with an index page listing files and sections for each workshop:
-`http://0.0.0.0:1234`
-
-Tip: If you're running the build on Windows (WSL) and the above host name won't resolve, try localhost: `http://localhost:1234`
+`http://localhost:1234`
 
 ## Working through the exercises
 
 ### Workshop 1: Manual Testing & Tools
 
-This part of the project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on in Workshop 1 are the Homepage and About page, starting from this URL: `http://0.0.0.0:1234/workshop1-manual-testing/exercises-start`
+This part of the project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on in Workshop 1 are the Homepage and About page, starting from this URL: `http://localhost:1234/workshop1-manual-testing/exercises-start`
 
 Here are the example source files for workshop 1:
 
@@ -111,7 +109,9 @@ Here are the example source files for workshop 1:
 
 In workshop 2, we get more advanced with a React web application built out of the same monorepo. There are folders for each of the sections and the build will already be set up with the required tooling.
 
-The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
+The URL for workshop 2 is: `http://localhost:1234/workshop2-automated-testing`
+
+**Windows note:** Jest and Puppeteer are not working on WSL for Workshop 2. This may be fixed at some point in the future, but consider it a heads up.
 
 - [exercise0-storybook](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop2-automated-testing/exercise0-storybook)
   - To start Storybook, run this command: `yarn storybook`
@@ -130,7 +130,7 @@ The URL for workshop 2 is: `http://0.0.0.0:1234/workshop2-automated-testing`
 In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice navigation and SEO.
 
 Here, we will primarily work on site listings and associated components. The URL for workshop 3 is:
-`http://0.0.0.0:1234/workshop3-semantics-aria`
+`http://localhost:1234/workshop3-semantics-aria`
 
 - [exercise1-headings-landmarks](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise1-headings-landmarks)
 - [exercise2-what-is-aria](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise2-what-is-aria)

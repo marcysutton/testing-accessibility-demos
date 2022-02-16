@@ -8,7 +8,7 @@ import fs from 'fs'
 
 describe('Accessibility Tree', () => {
     beforeAll(async () => {
-        await page.goto('http://0.0.0.0:1234')
+        await page.goto('http://localhost:1234')
     })
 
     it('should display "CampSpots" text on page', async () => {

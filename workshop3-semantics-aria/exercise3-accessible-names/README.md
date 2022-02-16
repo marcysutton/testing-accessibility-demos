@@ -36,7 +36,7 @@ let the wrapping button element provide a name somehow.
 
 You can visit the before and after pages containing icon components by URL:
 
-- http://0.0.0.0:1234/workshop3-semantics-aria/listings
-- http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
-- http://0.0.0.0:1234/workshop3-semantics-aria/exercise3/listing-cranberry-lake
-- http://0.0.0.0:1234/workshop3-semantics-aria/exercise3/listings
+- http://localhost:1234/workshop3-semantics-aria/listings
+- http://localhost:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/exercise3/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/exercise3/listings
