@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility workshop series",
   "scripts": {
-    "start": "parcel index.html workshop1-manual-testing workshop2-automated-testing/index.html workshop3-semantics-aria/index.html --no-source-maps",
+    "start": "parcel index.html workshop1-manual-testing workshop2-automated-testing/index.html workshop3-semantics-aria/index.html workshop4-interactions-mechanics/index.html --no-source-maps",
     "build": "parcel build",
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run",
@@ -90,6 +90,8 @@
     "workshop2-data": "./workshop2-automated-testing/data",
     "workshop3-components": "./workshop3-semantics-aria/components",
     "workshop3-data": "./workshop3-semantics-aria/data",
+    "workshop4-components": "./workshop4-interactions-mechanics/components",
+    "workshop4-data": "./workshop4-interactions-mechanics/data",
     "images": "./images"
   },
   "jest": {

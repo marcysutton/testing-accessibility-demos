@@ -141,11 +141,12 @@ Here, we will primarily work on site listings and associated components. The URL
 
 Workshop 4 is my favorite topic in accessibility: user interactions and mechanics! We’ll dig into common patterns for keyboard interactions and how screen readers overlap. We’ll use JavaScript and advanced techniques to craft accessible experiences for a variety of user inputs.
 
-- exercise1-the-keyboard
-- exercise2-screen-reader-overlap
-- exercise3-focus-management-js
-- exercise4-announcements-with-at
-- exercise5-advanced-scripting-aria
+- [exercise1-the-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise1-the-keyboard)
+- [exercise2-screen-reader-overlap](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise2-screen-reader-overlap)
+- [exercise3-focus-management-js](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise3-focus-management-js)
+- [exercise4-announcements-with-AT](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise4-announcements-with-AT)
+- [exercise5-advanced-scripting-ARIA](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise5-advanced-scripting-ARIA)
+
 ### Workshop 5: Design & People Skills
 
 In workshop 5, we’ll mix things up a bit to discuss topics that are necessary to solve accessibility problems but focus more on design thinking or culture and less on code.
