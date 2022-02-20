@@ -2,13 +2,13 @@ import React from "react"
 import BodyClassName from "react-body-classname"
 import sanitizeHtml from "sanitize-html"
 import {Helmet} from "react-helmet"
-import LoadedImageUrl from "./utils/loaded-image-url"
+import LoadedImageUrl from "workshop4-components/utils/loaded-image-url"
 
 import "workshop4-components/styles/page-listings.scss"
 
 import Icon from "workshop4-components/icon"
 import ListingsData from "workshop4-data/listings.json"
-import DatePicker from "workshop4-components/date-picker/date-picker"
+import DatePicker from "./date-picker"
 
 import * as imageURLs from "../../images/listings/*.{png,jpg}"
 
