@@ -83,6 +83,51 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
         return weeks
     }
 
+    const firstFocusedItemDate = datesArray[0]
+    const [focusedDate, setFocusedDate] = useState(firstFocusedItemDate)
+
+    const buttonRefs = useRef([])
+
+    const handleKeyUp = (event) => {
+        let buttonDate = event.target.dataset.date
+        let buttonDateIndex = datesArray.indexOf(buttonDate)
+        // if date + 1 is within days array, go to next button
+        if (event.key === 'ArrowRight') {
+            let nextDayNum = buttonDateIndex + 1
+            if (nextDayNum < datesArray.length) {
+                setFocusedDate(datesArray[nextDayNum])
+                focusDayByIndex(nextDayNum)
+            }
+        }
+        // if date - 1 is within days array, go to previous button
+        else if (event.key === 'ArrowLeft') {
+            let previousDayNum = buttonDateIndex - 1
+            if (previousDayNum >= 0) {
+                setFocusedDate(datesArray[previousDayNum])
+                focusDayByIndex(previousDayNum)
+            }
+        }
+        // if date + 7 is within days array, go to next week
+        else if (event.key === 'ArrowDown') {
+            let nextWeekNum = buttonDateIndex + 7
+            if (datesArray[nextWeekNum]) {
+                setFocusedDate(datesArray[nextWeekNum])
+                focusDayByIndex(nextWeekNum)
+            }
+        }
+        // if date - 7 is within days array, go to previous week
+        else if (event.key === 'ArrowUp') {
+            let previousWeekNum = buttonDateIndex - 7
+            if (datesArray[previousWeekNum]) {
+                setFocusedDate(datesArray[previousWeekNum])
+                focusDayByIndex(previousWeekNum)
+            }
+        }
+    }
+    const focusDayByIndex = (index) => {
+        buttonRefs.current[index].focus()
+    }
+
     return (
         <div className="date-picker">
             <header>
@@ -157,7 +202,12 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
                                             day.isCurrentMonth ? 'currentMonth' : '',
                                             isDaySelected(day) ? 'selected' : ''
                                         ].join(' ').trim()}
+                                        data-date={day.date}
                                         onClick={() => selectDay(day)}
+                                        onKeyUp={(event) => handleKeyUp(event)}
+                                        ref={elementRef => {buttonRefs.current.push(elementRef)
+                                        }}
+                                        tabIndex={focusedDate === day.date ? '0' : '-1'}
                                     >
                                         <time date-time={day.date}>{day.dayOfMonth}</time>
                                         <span className="icon" aria-hidden="true"></span>
