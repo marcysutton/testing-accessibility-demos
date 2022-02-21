@@ -8,6 +8,28 @@ import "workshop4-components/styles/page-submit-listing.scss"
 const SubmitListingPage = () => {
     const [errorMessage, setErrorMessage] = useState('')
 
+    const submitFunc = (event) => {
+        event.preventDefault()
+
+        const formElements = Array.from(event.target.elements)
+        formElements.map((element, index) => {
+            switch (element.type) {
+                // ignore the checkbox and submit button
+                case 'checkbox':
+                case 'submit':
+                    return
+                break
+
+                default:
+                    if (element.value.trim().length === 0) {
+                        setErrorMessage('Required fields cannot be empty.')
+                    }
+                break
+            }
+        })
+
+    }
+
     return (
         <BodyClassName className="header-overlap page-submit-listing">
             <>
@@ -23,21 +45,21 @@ const SubmitListingPage = () => {
                     <article className="form-wrap">
                         <div className="layout">
                             <h3>Got a camping spot our community would enjoy? Tell us about it!</h3>
-                            <form className="form" action="">
-                                <p id="errors" role="alert" aria-atomic="true">{errorMessage}</p>
+                            <form className="form" action="" onSubmit={submitFunc} aria-describedby="key">
+                                <p className="error" role="alert" aria-atomic="true">{errorMessage}</p>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
-                                        <label htmlFor="sitename">Site Name (required)</label>
-                                        <input type="text" id="sitename" required />
+                                        <label htmlFor="sitename">Site Name <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="text" id="sitename" />
                                     </div>
                                     <div className="form-field">
-                                        <label htmlFor="location">Location (required)</label>
-                                        <input type="text" id="location" required />
+                                        <label htmlFor="location">Location <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="text" id="location" />
                                     </div>
                                 </div>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
-                                        <label htmlFor="fee">Nightly fee</label>
+                                        <label htmlFor="fee">Nightly fee <span className="asterisk" abbr="required">*</span></label>
                                         <input type="number" id="fee" placeholder="$" />
                                     </div>
                                     <div className="form-field">
@@ -48,9 +70,10 @@ const SubmitListingPage = () => {
                                     </div>
                                 </div>
                                 <div className="form-field">
-                                    <label htmlFor="notes">Notes</label>
+                                    <label htmlFor="notes">Notes <span className="asterisk" abbr="required">*</span></label>
                                     <textarea id="notes"></textarea>
                                 </div>
+                                <p id="key" className="asterisk">* Field is required.</p>
                                 <div className="form-submit">
                                     <button className="btn-submit">Submit</button>
                                 </div>

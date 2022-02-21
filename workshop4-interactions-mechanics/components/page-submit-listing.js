@@ -24,17 +24,17 @@ const SubmitListingPage = () => {
                             <form className="form">
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
-                                        <label htmlFor="sitename">Site Name (required)</label>
-                                        <input type="text" id="sitename" required />
+                                        <label htmlFor="sitename">Site Name <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="text" id="sitename" />
                                     </div>
                                     <div className="form-field">
-                                        <label htmlFor="location">Location (required)</label>
-                                        <input type="text" id="location" required />
+                                        <label htmlFor="location">Location <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="text" id="location" />
                                     </div>
                                 </div>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
-                                        <label htmlFor="fee">Nightly fee</label>
+                                        <label htmlFor="fee">Nightly fee <span className="asterisk" abbr="required">*</span></label>
                                         <input type="number" id="fee" placeholder="$" />
                                     </div>
                                     <div className="form-field">
@@ -45,9 +45,10 @@ const SubmitListingPage = () => {
                                     </div>
                                 </div>
                                 <div className="form-field">
-                                    <label htmlFor="notes">Notes</label>
+                                    <label htmlFor="notes">Notes <span className="asterisk" abbr="required">*</span></label>
                                     <textarea id="notes"></textarea>
                                 </div>
+                                <p id="key" className="asterisk">* Field is required.</p>
                                 <div className="form-submit">
                                     <button className="btn-submit">Submit</button>
                                 </div>
