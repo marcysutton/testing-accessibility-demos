@@ -8,6 +8,7 @@ import AboutPage from "workshop4-components/page-about"
 import ListingsPage from "workshop4-components/page-listings"
 import Listing from "workshop4-components/page-listing-detail"
 import KeyboardExercise from "./exercise2-focus-management-js/page-listing-detail"
+import ScreenReaderExercise from "./exercise3-screen-reader-overlap/page-listing-detail"
 import SkipLinks from "workshop4-components/skip-links"
 
 import imgFooterLogo from "/images/icons/footer-logo.svg"
@@ -22,6 +23,7 @@ export function App() {
 				<ListingsPage path="/workshop4-interactions-mechanics/listings" />
 				<Listing path="/workshop4-interactions-mechanics/listing/:id" />
 				<KeyboardExercise path="/workshop4-interactions-mechanics/exercise2/:id" />
+				<ScreenReaderExercise path="/workshop4-interactions-mechanics/exercise3/:id" />
 			</Router>
 		</main>
 		<footer id="footer">
