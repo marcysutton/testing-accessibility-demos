@@ -2,11 +2,29 @@
 #header {
     padding-top: 1em;
 }
-.header-overlap #header {
-    padding-top: 3em;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.header-overlap {
+    #header {
+        padding-top: 3em;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .page-header {
+        align-items: end;
+        display: flex;
+
+        .page-header-content {
+            color: var(--color-primary-light);
+        }
+        .primary-heading {
+            font-size: 2.15rem;
+            margin-bottom: 0;
+            margin-top: auto;
+        }
+        .subhead {
+            font-size: 0.85rem;
+        }
+    }
 }
 #header-nav {
     background-color: var(--bgcolor-header);

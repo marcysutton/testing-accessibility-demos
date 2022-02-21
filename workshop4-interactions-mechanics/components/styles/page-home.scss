@@ -18,6 +18,9 @@
     padding: 2em;
     margin: -60px auto 0;
 }
+.page-home .form-field input {
+    padding-left: 3em;
+}
 @media screen and (max-width: 640px) {
     .page-home .form-wrap {
         grid-template-columns: none;

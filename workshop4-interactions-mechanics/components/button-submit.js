@@ -4,7 +4,7 @@ const ButtonSubmit = ({buttonName, onClick}) => {
     return (
         <button
             aria-label={buttonName}
-            className="btn-submit btn-lookingglass"
+            className="btn-submit-icon btn-lookingglass"
             data-testid="btn-submit"
             onClick={(event) => { onClick(event)}}
         >

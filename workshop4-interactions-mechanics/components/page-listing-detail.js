@@ -24,8 +24,8 @@ const Listing = props => {
                         style={{backgroundImage: `url(${headerImageUrl}`}}
                     >
                         <div className="page-header-content wide-layout">
-                            <div className="listing-name">{data.listingName}</div>
-                            <p className="location">{data.location}</p>
+                            <div className="primary-heading listing-name">{data.listingName}</div>
+                            <p className="subhead location">{data.location}</p>
                         </div>
                     </div>
                     <div className="wide-layout two-parts-70-30">

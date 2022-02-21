@@ -4,3 +4,5 @@ There are many situations where new information is presented in our applications
 
 ## Exercise: Implement global form validation and test in a screen reader
 
+- `exercise4-announcements-with-AT/page-submit-listing.js`
+- http://localhost:1234/workshop4-interactions-mechanics/exercise4/submit-listing

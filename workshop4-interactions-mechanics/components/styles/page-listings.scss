@@ -26,22 +26,6 @@
 }
 
 .page-listing-detail {
-    .page-header {
-        .page-header-content {
-            align-items: baseline;
-            color: var(--color-primary-light);
-            display: grid;
-            grid-template-rows: 9fr 1fr;
-        }
-        .listing-name {
-            font-size: 2.15rem;
-            margin-bottom: 0;
-            margin-top: auto;
-        }
-        .location {
-            font-size: 0.85rem;
-        }
-    }
     h2, h3 {
         font-size: 1rem;
         font-weight: 500;

@@ -1,0 +1,22 @@
+
+/* Submit Listing Page */
+.page-submit-listing .page-header {
+    background: url(/images/utah-desert.jpg) no-repeat;
+    background-position: top center;
+    background-size: auto;
+    min-height: 420px;
+}
+.page-submit-listing .form-wrap {
+    background-color: var(--bgcolor-form);
+    padding-bottom: 3em;
+}
+.page-submit-listing .layout {
+    padding-top: 2em;
+
+    h3 {
+        margin-bottom: 2em;
+    }
+}
+.page-submit-listing .form-field {
+    margin-bottom: 1em;
+}

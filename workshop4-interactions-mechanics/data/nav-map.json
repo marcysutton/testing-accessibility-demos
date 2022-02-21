@@ -101,6 +101,12 @@
                 "url": "#",
                 "name": "Accessibility"
             }]
+        }, {
+            "headerText": "Contribute",
+            "items": [{
+                "url": "/workshop4-interactions-mechanics/submit-listing",
+                "name": "Submit Your Spot"
+            }]
         }]
     }
 }

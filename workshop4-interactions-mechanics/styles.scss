@@ -63,6 +63,7 @@ button {
     margin: 4em auto;
     max-width: var(--width-wide);
     padding: 0 0.5em;
+    width: 100%;
 }
 .header-overlap .page-header .wide-layout {
     margin-top: 0;
@@ -183,11 +184,17 @@ button {
 .form-field span.icon-lookingglass-white {
     background: url(/images/icons/icon-lookingglass-white.svg) no-repeat;
 }
-.form-field button.btn-submit span.icon-lookingglass-white {
+.form-field button.btn-submit-icon span.icon-lookingglass-white {
     background-size: contain;
 }
 .form-field span.icon-calendar {
     background: url(/images/icons/icon-calendar.svg) no-repeat;
+}
+.form-field.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
 .form-field input,
 .form-field textarea {
@@ -199,12 +206,40 @@ button {
     border-width: 1px;
     font-family: inherit;
     line-height: 2;
+}
+.form-field input[type="text"],
+.form-field input[type="number"] {
+    height: 3rem;
+    padding-left: 1em;
+}
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field textarea {
     width: 100%;
     -webkit-appearance: none;
 }
-.form-field input {
+.form-field input[type="checkbox"] {
+    color: currentColor;
+    display: grid;
     height: 3rem;
-    padding-left: 3em;
+    margin: 0;
+    place-content: center;
+    width: 3rem;
+    -webkit-appearance: none;
+
+    &:before {
+        background-color: CanvasText;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        content: "";
+        height: 1em;
+        transform: scale(0);
+        width: 1em;
+        transform-origin: bottom left;
+    }
+      
+    &:checked:before {
+        transform: scale(1);
+    }
 }
 .form-field textarea {
     height: 10em;
@@ -227,11 +262,14 @@ button {
 .form-submit [class^='btn-']:hover {
     cursor: pointer;
 }
+.form-submit .btn-send,
+.form-submit .btn-submit {
+    font-size: 1rem;
+}
 .form-submit .btn-send {
     align-items: center;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    font-size: 1rem;
     width: 6em;
 }
 .form-submit .btn-lookingglass svg {
