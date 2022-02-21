@@ -77,7 +77,7 @@
         "linkGroups": [{
             "headerText": "Adventure Ideas",
             "items": [{
-                "url": "#",
+                "url": "/workshop4-interactions-mechanics/adventures-hikes",
                 "name": "Hikes"
             }, {
                 "url": "#",

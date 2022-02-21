@@ -5,7 +5,8 @@ There are many situations where new information is presented in our applications
 Sometimes, screen readers need to be notified of things happening on the screen without their focus being moved. That's where
 ARIA Live Regions come in. You can apply them with `role=alert`, `role=status`, `aria-live=assertive` or `aria-live=polite` on
 page load, and by adding text to them assistive technologies will make an announcement. There are more ways to configure Live
-Regions, such as the `aria-atomic` attribute which will change how much of the text is announced (all or parts of it?).
+Regions, such as the `aria-atomic` and `aria-relevant` attributes, which will change how much of the text is announced
+(all or parts of it?).
 
 There is also the topic of client-side routing, which is an opportunity to tie focus management and announcements together.
 
