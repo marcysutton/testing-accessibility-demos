@@ -129,7 +129,7 @@ The URL for workshop 2 is: `http://localhost:1234/workshop2-automated-testing`
 
 In workshop 3, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice navigation and SEO.
 
-Here, we will primarily work on site listings and associated components. The URL for workshop 3 is:
+Here, we will primarily work on site listings and associated components. The local URL for workshop 3 is:
 `http://localhost:1234/workshop3-semantics-aria`
 
 - [exercise1-headings-landmarks](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop3-semantics-aria/exercise1-headings-landmarks)
@@ -140,6 +140,8 @@ Here, we will primarily work on site listings and associated components. The URL
 ### Workshop 4: Interactions & Mechanics
 
 Workshop 4 is my favorite topic in accessibility: user interactions and mechanics! We’ll dig into common patterns for keyboard interactions and how screen readers overlap. We’ll use JavaScript and advanced techniques to craft accessible experiences for a variety of user inputs.
+
+This workshop will touch on numerous components including skip links, the date picker, form validation, and an image slideshow. The local URL for workshop 4 is: `http://localhost:1234/workshop4-interactions-mechanics`
 
 - [exercise1-the-keyboard](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise1-the-keyboard)
 - [exercise2-focus-management-js](https://github.com/marcysutton/testing-accessibility-demos/tree/main/workshop4-interactions-mechanics/exercise2-focus-management-js)
