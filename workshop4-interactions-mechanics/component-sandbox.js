@@ -42,7 +42,7 @@ const DemoSandbox = () => {
 
                 <section aria-labelledby="header1">
                     <h2 className="h3-style" id="header1">CSS Visibility Techniques</h2>
-                    <button className={currentCSSClass} id="target-button" ref={cssTargetBtnRef}>
+                    <button className={currentCSSClass} id="css-target-button" ref={cssTargetBtnRef}>
                         Reserve
                     </button>
                     <fieldset>
