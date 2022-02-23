@@ -21,5 +21,5 @@ and test your changes in the browser with VoiceOver and/or NVDA.
 
 You can test the before and after components on the Listing pages here:
 
-- http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
-- http://0.0.0.0:1234/workshop3-semantics-aria/exercise2/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/exercise2/listing-cranberry-lake

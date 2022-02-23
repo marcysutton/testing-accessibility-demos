@@ -3,7 +3,8 @@ const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   "stories": [
-    "../workshop2-automated-testing/**/*.stories.@(js|jsx|ts|tsx)"
+    "../workshop2-automated-testing/**/*.stories.@(js|jsx|ts|tsx)",
+    "../workshop4-interactions-mechanics/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   "addons": [
     "@storybook/addon-links",
@@ -23,7 +24,7 @@ module.exports = {
       },{
           loader: 'sass-loader',
           options: {
-            additionalData: "@import '/workshop2-automated-testing/variables.scss';"
+            additionalData: "@import '/workshop4-interactions-mechanics/variables.scss';"
           }
       }],
       include: path.resolve(__dirname, '../'),
@@ -43,6 +44,8 @@ module.exports = {
     config.resolve.alias = {
       "workshop2-components": path.resolve(__dirname, "../workshop2-automated-testing/components"),
       "workshop2-data": path.resolve(__dirname, "../workshop2-automated-testing/data"),
+      "workshop4-components": path.resolve(__dirname, "../workshop4-interactions-mechanics/components"),
+      "workshop4-data": path.resolve(__dirname, "../workshop4-interactions-mechanics/data"),
       images: path.resolve(__dirname, "../images")
     }
 

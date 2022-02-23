@@ -20,5 +20,5 @@ Find a Camping Spot" in the main navigation, and the individual listing details 
 
 Or visit the before and after pages by URL:
 
-- http://0.0.0.0:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
-- http://0.0.0.0:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
+- http://localhost:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake

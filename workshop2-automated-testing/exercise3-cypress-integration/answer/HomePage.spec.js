@@ -1,6 +1,6 @@
 describe('HomePage', () => {
     beforeEach(() => {
-        cy.visit('http://0.0.0.0:1234/workshop2-automated-testing/')
+        cy.visit('http://localhost:1234/workshop2-automated-testing/')
         
         cy.injectAxe()
     })

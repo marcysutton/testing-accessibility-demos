@@ -1,0 +1,26 @@
+.skip-links {
+    list-style: none;
+    margin: 0 auto;
+    max-width: var(--width-wide);
+    padding: 0;
+    position: relative;
+    z-index: 2;
+
+    &.header {
+        transform: translateX(-1em) translateY(-1em);
+    }
+    li a {
+        background-color: var(--color-accent-secondary);
+        color: var(--color-primary-light);
+        font-weight: bold;
+        opacity: 0;
+        padding: 0.5em;
+        position: absolute;
+        text-decoration: none;
+        z-index: 1;
+
+        &:focus {
+            opacity: 1;
+        }
+    }
+}

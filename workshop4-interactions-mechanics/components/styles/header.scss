@@ -1,0 +1,79 @@
+/* Header and Mega-Nav */
+#header {
+    padding-top: 1em;
+}
+.header-overlap {
+    #header {
+        padding-top: 3em;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .page-header {
+        align-items: end;
+        display: flex;
+
+        .page-header-content {
+            color: var(--color-primary-light);
+        }
+        .primary-heading {
+            font-size: 2.15rem;
+            margin-bottom: 0;
+            margin-top: auto;
+        }
+        .subhead {
+            font-size: 0.85rem;
+        }
+    }
+}
+#header-nav {
+    background-color: var(--bgcolor-header);
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--width-wide);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+#header-logo h1 {
+    font-size: inherit;
+    margin: 0;
+}
+#header-logo a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    font-weight: 500;
+    padding: 1.5em;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+#header-login {
+    margin-left: auto;
+}
+#header-login a {
+    color: inherit;
+    display: block;
+    opacity: 0.6;
+    padding: 1.65em;
+    text-decoration: none;
+}
+.logo-img {
+    display: inline-block;
+    margin-right: 0.25em;
+}
+
+@media screen and (max-width: 640px) {
+    #header-logo a {
+        font-size: 0.85rem;
+        padding: 1.5em 0.5em;
+    }
+    #header-login {
+        font-size: 0.85rem;
+        margin-left: 0px;
+    }
+}
