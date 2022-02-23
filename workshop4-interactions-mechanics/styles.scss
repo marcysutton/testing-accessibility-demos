@@ -208,12 +208,14 @@ button {
     line-height: 2;
 }
 .form-field input[type="text"],
-.form-field input[type="number"] {
+.form-field input[type="number"],
+.form-field input[type="email"] {
     height: 3rem;
     padding-left: 1em;
 }
 .form-field input[type="text"],
 .form-field input[type="number"],
+.form-field input[type="email"],
 .form-field textarea {
     width: 100%;
     -webkit-appearance: none;

@@ -25,3 +25,6 @@
 .page-submit-listing .form-field {
     margin-bottom: 1em;
 }
+.page-submit-listing form.dirty [aria-invalid="true"] {
+    border-color: var(--color-accent-error);
+}

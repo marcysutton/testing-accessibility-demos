@@ -21,7 +21,17 @@ const SubmitListingPage = () => {
                     <article className="form-wrap">
                         <div className="layout">
                             <h3>Got a camping spot our community would enjoy? Tell us about it!</h3>
-                            <form className="form">
+                            <form>
+                                <div className="two-parts-50-50">
+                                    <div className="form-field">
+                                        <label htmlFor="submittername">Your name <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="text" id="submittername" />
+                                    </div>
+                                    <div className="form-field">
+                                        <label htmlFor="email">Your email address <span className="asterisk" abbr="required">*</span></label>
+                                        <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+                                    </div>
+                                </div>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
                                         <label htmlFor="sitename">Site Name <span className="asterisk" abbr="required">*</span></label>
@@ -34,21 +44,21 @@ const SubmitListingPage = () => {
                                 </div>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
-                                        <label htmlFor="fee">Nightly fee <span className="asterisk" abbr="required">*</span></label>
+                                        <label htmlFor="fee">Nightly fee</label>
                                         <input type="number" id="fee" placeholder="$" />
                                     </div>
                                     <div className="form-field">
                                         <label htmlFor="ownership">
-                                            Can the public legally camp here?
+                                            Can the public legally camp here? <span className="asterisk" abbr="required">*</span>
                                         </label>
                                         <input type="checkbox" id="ownership" name="ownership" value="Owned" />
                                     </div>
                                 </div>
                                 <div className="form-field">
-                                    <label htmlFor="notes">Notes <span className="asterisk" abbr="required">*</span></label>
+                                    <label htmlFor="notes">Notes</label>
                                     <textarea id="notes"></textarea>
                                 </div>
-                                <p id="key" className="asterisk">* Field is required.</p>
+                                <p id="key" className="asterisk">* Fields are required.</p>
                                 <div className="form-submit">
                                     <button className="btn-submit">Submit</button>
                                 </div>
