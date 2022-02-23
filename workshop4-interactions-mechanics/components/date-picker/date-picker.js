@@ -4,6 +4,7 @@ import dayjs from "dayjs"
 import weekday from "dayjs/plugin/weekday"
 import weekOfYear from "dayjs/plugin/weekOfYear"
 
+import HeaderPortal from "workshop4-components/header-portal"
 import { createActiveMonthDays, createPrevMonthDays, createNextMonthDays } from "workshop4-components/date-picker/utils"
 import "workshop4-components/date-picker/date-picker.scss"
 
@@ -29,11 +30,10 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
     let dayData = [...prevMonthDays, ...activeMonthDays, ...nextMonthDays]
     let [unavailableDates, setUnavailableDates] = useState(initUnavailableDates)
     let [selectedDates, setSelectedDates] = useState([])
-
+    
     const datesArray = dayData.map((day) => {
         return day.date
     })
-
     const setPrevMonth = () => {
         // only go backward as far as current month
         if (isPrevMonthAvailable()) {
@@ -73,7 +73,6 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
             }
         }
     }
-
     const tableRows = (dayData, sliceSize, sliceFunc) => {
         const weeks = []
         for (var i = 0; i < dayData.length; i += sliceSize) {
@@ -82,6 +81,35 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
         }
         return weeks
     }
+
+    // Reserve modal functionality
+    const modalLaunchBtnRef = useRef(null)
+    const confirmDialogRef = useRef(null)
+    const dialogHeadingRef = useRef(null)
+    let [dialogActive, setDialogActive] = useState(false)
+    
+    const showConfirmModal = () => {
+        console.log('show modal')
+        setDialogActive(true)
+    }
+    const hideConfirmModal = () => {
+        setDialogActive(false)
+    }
+    const handleKey = (event) => {
+        if (dialogActive && event.key === 'Escape') {
+            setDialogActive(false)
+        }
+    }
+    useEffect(()=> {
+        if (dialogActive) {
+            // Note: inert requires a polyfill to work in non-Chrome browsers
+            document.getElementById('app-root').setAttribute('inert', 'inert')
+            dialogHeadingRef.current.focus()
+        } else {
+            document.getElementById('app-root').removeAttribute('inert')
+            modalLaunchBtnRef.current.focus()
+        }
+    }, [dialogActive])
 
     return (
         <div className="date-picker">
@@ -188,7 +216,35 @@ const DatePicker = ({numMonthsAheadToStart = 2}) => {
                     <span className="date-key-text">Selected</span>
                 </li>
             </ul>
-            <button className="reserve-btn">Reserve</button>
+            <button
+                className="reserve-btn"
+                disabled={selectedDates.length > 0 ? null : 'disabled'}
+                onClick={showConfirmModal}
+                ref={modalLaunchBtnRef}
+            >
+                Reserve
+            </button>
+
+            <HeaderPortal>
+                <dialog
+                    aria-labelledby="dialogHeading"
+                    aria-modal={dialogActive ? 'true' : 'false'}
+                    open={dialogActive ? 'open' : null}
+                    onKeyUp={handleKey}
+                    ref={confirmDialogRef}
+                >
+                    <h1 id="dialogHeading" ref={dialogHeadingRef} tabIndex="-1">Confirm selection</h1>
+                    <p>You have selected these dates:</p>
+                    <ul>
+                    {selectedDates.map((date, index) => (
+                        <li key={index}>{date}</li>
+                    ))}
+                    </ul>
+                    <div className="form-submit">
+                        <button className="btn-submit" onClick={hideConfirmModal}>Accept</button>
+                    </div>
+                </dialog>
+            </HeaderPortal>
         </div>
     )
 }
