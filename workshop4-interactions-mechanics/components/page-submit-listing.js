@@ -1,7 +1,7 @@
 import React from "react"
 import BodyClassName from "react-body-classname"
 import {Helmet} from "react-helmet"
-import HeadingPortal from "workshop4-components/heading-portal"
+import HeaderPortal from "workshop4-components/header-portal"
 
 import "workshop4-components/styles/page-submit-listing.scss"
 
@@ -9,9 +9,9 @@ const SubmitListingPage = () => {
     return (
         <BodyClassName className="header-overlap page-submit-listing">
             <>
-                <HeadingPortal>
+                <HeaderPortal>
                     <h1 className="visually-hidden">CampSpots</h1>
-                </HeadingPortal>  
+                </HeaderPortal>
                 <section aria-labelledby="heading-about-1">
                     <header className="page-header">
                         <div className="page-header-content layout">

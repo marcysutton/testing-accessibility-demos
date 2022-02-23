@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { createPortal } from "react-dom"
 
-const HeadingPortal = ({children}) => {
+const HeaderPortal = ({children}) => {
     const mount = document.getElementById("portal-root")
     const el = document.createElement("div")
 
@@ -13,4 +13,4 @@ const HeadingPortal = ({children}) => {
     return createPortal(children, el)
 }
 
-export default HeadingPortal
+export default HeaderPortal

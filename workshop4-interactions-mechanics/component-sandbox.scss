@@ -1,0 +1,56 @@
+.component-sandbox {
+    section {
+        border-top: 1px solid #666;
+    }
+    button {
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+    #css-target-button {
+        &.visuallyHidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        &.opacityNone {
+            opacity: 0;
+        }
+        &.displayNone {
+            display: none;
+        }
+        &.visibilityHidden {
+            visibility: hidden;
+        }
+    }
+    fieldset {
+        border: none;
+        margin-top: 1em;
+        padding: 0;
+    }
+    legend {
+        font-weight: bold;
+        margin: 0 0 0.5em;
+    }
+    label {
+        border: 1px solid #ccc;
+        border-radius: 5em;
+        display: inline-block;
+        margin-bottom: 1em;
+        margin-right: 1em;
+        padding: 0.25em;
+    }
+    label.selected {
+        background-color: #ccc;
+    }
+}

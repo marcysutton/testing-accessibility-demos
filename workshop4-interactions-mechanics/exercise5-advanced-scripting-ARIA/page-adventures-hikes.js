@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import BodyClassName from "react-body-classname"
 import {Helmet} from "react-helmet"
 
-import HeadingPortal from "workshop4-components/heading-portal"
+import HeaderPortal from "workshop4-components/header-portal"
 import Slideshow from "./slideshow"
 
 import "workshop4-components/styles/page-adventure-ideas.scss"
@@ -29,9 +29,9 @@ const HikesPage = () => {
     return (
         <BodyClassName className="header-overlap page-adventure-ideas">
             <>
-                <HeadingPortal>
+                <HeaderPortal>
                     <h1 className="visually-hidden">CampSpots</h1>
-                </HeadingPortal>  
+                </HeaderPortal>
                 <section aria-labelledby="heading-about-1">
                     <header className="page-header">
                         <div className="page-header-content layout">
