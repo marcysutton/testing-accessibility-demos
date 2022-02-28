@@ -7,7 +7,7 @@
     z-index: 2;
 
     &.header {
-        transform: translateX(-1em) translateY(-1em);
+        transform: translateY(-1em);
     }
     li a {
         background-color: var(--color-accent-secondary);

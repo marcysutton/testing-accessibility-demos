@@ -8,13 +8,13 @@
     min-height: 640px;
 }
 .page-home .form-wrap {
-    align-items: end;
+    align-items: flex-end;
     background-color: var(--bgcolor-form);
     border-radius: 3px;
     box-shadow: 0 10px 30px #00000012;
     display: grid;
     gap: 1em;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 5fr 5fr 1fr;
     padding: 2em;
     margin: -60px auto 0;
 }

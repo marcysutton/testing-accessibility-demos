@@ -7,8 +7,9 @@ import "workshop4-components/styles/page-submit-listing.scss"
 
 const SubmitListingPage = () => {
     const inputRefs = useRef([])
+    let [isFormSubmitted, setIsFormSubmitted] = useState(false)
     let [isFormDirty, setIsFormDirty] = useState(false)
-    const [errorMessage, setErrorMessage] = useState('')
+    const [errorAnnouncement, setErrorAnnouncement] = useState('')
     const [formState, setFormState] = useState({
         'sitename': '',
         'location': '',
@@ -19,8 +20,10 @@ const SubmitListingPage = () => {
         'notes': ''
     })
 
-    const submitFunc = (event) => {
+    const submitHandler = (event) => {
         event.preventDefault()
+
+        setIsFormSubmitted(true)
 
         let firstEmptyElementIndex = null
         const formElements = Array.from(event.target.elements)
@@ -33,7 +36,7 @@ const SubmitListingPage = () => {
 
                 default:
                     // set form state for aria-invalid
-                    setIsFormDirty(true)
+                    setIsFormDirty(false)
 
                     if (element.value.trim().length === 0) {
                         // focus on first empty input when submitted
@@ -41,18 +44,19 @@ const SubmitListingPage = () => {
                             firstEmptyElementIndex = index
                             inputRefs.current[index].focus()
                         }
-                        setErrorMessage('Required fields cannot be empty.')
+                        setErrorAnnouncement('Required fields cannot be empty.')
                     }
                 break
             }
         })
     }
-    const handleChange = (event) => {
+    const changeHandler = (event) => {
         const target = event.target
         const value = target.type === 'checkbox' ? target.checked : target.value
         const id = target.id
 
-        setIsFormDirty(false)
+        setIsFormDirty(true)
+
         setFormState(prevState => {
             return {...prevState, ...{
                 [id]: value
@@ -78,21 +82,21 @@ const SubmitListingPage = () => {
                             <form
                                 action=""
                                 aria-describedby="key"
-                                className={isFormDirty ? `dirty` : ``}
-                                onSubmit={submitFunc}
+                                className={!isFormDirty ? `dirty` : ``}
+                                onSubmit={submitHandler}
                             >
                                 <p className="error" role="alert" aria-relevant="all">
-                                    {isFormDirty ? errorMessage : '' }
+                                    {!isFormDirty ? errorAnnouncement : '' }
                                 </p>
                                 <div className="two-parts-50-50">
                                     <div className="form-field">
                                         <label htmlFor="submittername">Your name <span className="asterisk" aria-label="required">*</span></label>
                                         <input
                                             aria-invalid={
-                                                isFormDirty && formState.submittername.length === 0 ? 'true' : null
+                                                isFormSubmitted && formState.submittername.length === 0 ? 'true' : null
                                             }
                                             id="submittername"
-                                            onChange={handleChange}
+                                            onChange={changeHandler}
                                             ref={inputRef => {inputRefs.current.push(inputRef)}}
                                             type="text"
                                         />
@@ -101,11 +105,11 @@ const SubmitListingPage = () => {
                                         <label htmlFor="email">Your email address <span className="asterisk" aria-label="required">*</span></label>
                                         <input
                                             aria-invalid={
-                                                isFormDirty && formState.email.length === 0 ? 'true' : null
+                                                isFormSubmitted && formState.email.length === 0 ? 'true' : null
                                             }
                                             id="email"
-                                            onChange={handleChange}
-                                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                            onChange={changeHandler}
+                                            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                                             ref={inputRef => {inputRefs.current.push(inputRef)}}
                                             type="email"
                                         />
@@ -116,10 +120,10 @@ const SubmitListingPage = () => {
                                         <label htmlFor="sitename">Site Name <span className="asterisk" aria-label="required">*</span></label>
                                         <input
                                             aria-invalid={
-                                                isFormDirty && formState.sitename.length === 0 ? 'true' : null
+                                                isFormSubmitted && formState.sitename.length === 0 ? 'true' : null
                                             }
                                             id="sitename"
-                                            onChange={handleChange}
+                                            onChange={changeHandler}
                                             ref={inputRef => {inputRefs.current.push(inputRef)}}
                                             type="text"
                                         />
@@ -128,10 +132,10 @@ const SubmitListingPage = () => {
                                         <label htmlFor="location">Location <span className="asterisk" aria-label="required">*</span></label>
                                         <input
                                             aria-invalid={
-                                                isFormDirty && formState.location.length === 0 ? 'true' : null
+                                                isFormSubmitted && formState.location.length === 0 ? 'true' : null
                                             }
                                             id="location"
-                                            onChange={handleChange}
+                                            onChange={changeHandler}
                                             ref={inputRef => {inputRefs.current.push(inputRef)}}
                                             type="text"
                                         />
@@ -142,7 +146,7 @@ const SubmitListingPage = () => {
                                         <label htmlFor="fee">Nightly fee</label>
                                         <input
                                             id="fee"
-                                            onChange={handleChange}
+                                            onChange={changeHandler}
                                             placeholder="$"
                                             type="number"
                                         />
@@ -155,7 +159,7 @@ const SubmitListingPage = () => {
                                             checked
                                             id="legalToCamp"
                                             name="legalToCamp"
-                                            onChange={handleChange}
+                                            onChange={changeHandler}
                                             type="checkbox"
                                             value="Owned" 
                                         />
@@ -163,7 +167,7 @@ const SubmitListingPage = () => {
                                 </div>
                                 <div className="form-field">
                                     <label htmlFor="notes">Notes</label>
-                                    <textarea onChange={handleChange} id="notes"></textarea>
+                                    <textarea onChange={changeHandler} id="notes"></textarea>
                                 </div>
                                 <p id="key" className="asterisk">* Fields are required.</p>
                                 <div className="form-submit">

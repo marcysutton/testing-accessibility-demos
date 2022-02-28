@@ -311,7 +311,11 @@ button {
     width: 40px;
 }
 
+dialog {
+    display: none;
+}
 dialog[open] {
+    display: block;
     position: fixed;
     top: 0;
     z-index: 1;

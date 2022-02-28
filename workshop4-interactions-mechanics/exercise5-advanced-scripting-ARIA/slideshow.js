@@ -42,7 +42,12 @@ const Slideshow = ({images = [], imageURLs}) => {
             setFullScreenMode(false)
         }
     }
-    const keyHandler = (event) => {
+    const preventDefaultFunc = (event) => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault()
+        }
+    }
+    const keyUpHandler = (event) => {
         if (event.key === 'Escape') {
             closeFullScreen()
         }
@@ -70,7 +75,8 @@ const Slideshow = ({images = [], imageURLs}) => {
             <div
                 className={`inspiration-slideshow ${fullScreenMode ? 'fullscreen' : ''}`}
                 onClick={(event)=>handleScreenClick(event)}
-                onKeyUp={(event)=> { keyHandler(event) }}
+                onKeyDown={preventDefaultFunc}
+                onKeyUp={(event)=> { keyUpHandler(event) }}
             >
                 <button
                     aria-label="Close Full Screen mode"
