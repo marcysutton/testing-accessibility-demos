@@ -1,19 +1,19 @@
 [[redirects]]
   from = "/workshop1-manual-testing/*"
-  to = "/workshop1-manual-testing/index.html"
+  to = "/workshop1-manual-testing/*"
   status = 200
 
 [[redirects]]
-  from = "/workshop2-automated-testing/index.html"
+  from = "/workshop2-automated-testing/*"
   to = "/workshop2-automated-testing/*"
   status = 200
 
 [[redirects]]
   from = "/workshop3-semantics-aria/*"
-  to = "/workshop3-semantics-aria/index.html"
+  to = "/workshop3-semantics-aria/*"
   status = 200
 
 [[redirects]]
   from = "/workshop4-interactions-mechanics/*"
-  to = "/workshop4-interactions-mechanics/index.html"
+  to = "/workshop4-interactions-mechanics/*"
   status = 200
