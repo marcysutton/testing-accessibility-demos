@@ -3,7 +3,7 @@ import React from "react"
 import ButtonSubmit from "workshop4-components/button-submit"
 
 const SearchForm = () => (
-    <form className="form-wrap layout">
+    <form className="main-search form-wrap layout">
         <div className="form-field">
             <label htmlFor="place-search" className="label">Where to?</label>
             <div className="custom-input">
