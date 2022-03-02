@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>CampSpots</title>
         <link rel="stylesheet" type="text/css" href="./styles.css" />
@@ -7,57 +7,56 @@
     </head>
     <body class="page-home">
         <include src="workshop1-manual-testing/exercises-start/_includes/header.html"></include>
-        <main id="main">
+        <div id="main">
             <form class="layout" id="home-form">
-                <h2>Plan Your Trip</h2>
                 <div class="form-wrap">
                     <div class="form-field">
-                        <label class="label" for="place-search">Where to?</label>
+                        <span class="label" for="place-search">Where to?</span>
                         <div class="custom-input">
                             <span class="icon-lookingglass"></span>
                             <input type="text" id="place-search" placeholder="Try Oregon, Colorado..." />
                         </div>
                     </div>
                     <div class="form-field">
-                        <label class="label" for="date-search">Dates</label>
+                        <span class="label" for="date-search">Dates</span>
                         <div class="custom-input">
                             <span class="icon-calendar"></span>
                             <input type="text" id="date-search" placeholder="Enter dates" />
                         </div>
                     </div>
                     <div class="form-field form-submit">
-                        <button class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');" aria-label="Submit">
+                        <div class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
                                 <path d="M15.707 13.293L13 10.586C13.63 9.536 14 8.311 14 7C14 3.14 10.859 0 7 0C3.141 0 0 3.14 0 7C0 10.86 3.141 14 7 14C8.312 14 9.536 13.631 10.586 13L13.293 15.707C13.488 15.902 13.744 16 14 16C14.256 16 14.512 15.902 14.707 15.707L15.707 14.707C16.098 14.316 16.098 13.684 15.707 13.293ZM7 12C4.239 12 2 9.761 2 7C2 4.239 4.239 2 7 2C9.761 2 12 4.239 12 7C12 9.761 9.761 12 7 12Z" fill="#66666F"/>
                                 </svg>                            
-                        </button>
+                        </div>
                     </div>
                 </div>
             </form>
             <div class="wide-layout two-part-overlap">
                 <div class="content-block-wrap">
-                    <img src="../../images/tents.jpg" alt="A festival of tents at sunset">
+                    <img src="../../images/tents.jpg">
                     <div class="content-block">
-                        <h2>Rest and relaxation is a part of life</h2>
-                        <p>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</p>
+                        <h3>Rest and relaxation is a part of life</h3>
+                        <div>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</div>
 
-                        <p>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</p>
+                        <div>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</div>
                             
-                        <p>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</p>
+                        <div>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</div>
                     </div>
                 </div>
                 <div class="link-block">
                     <h3>Places to visit</h3>
                     <div class="link-list">
                         <div>
-                            <a href="#"><span aria-hidden="true"></span>New York</a>
-                            <a href="#"><span aria-hidden="true"></span>Texas</a>
-                            <a href="#"><span aria-hidden="true"></span>Utah</a>
+                            <a href="#">New York</a>
+                            <a href="#">Texas</a>
+                            <a href="#">Utah</a>
                         </div>
                         <div>
-                            <a href="#"><span aria-hidden="true"></span>Oregon</a>
-                            <a href="#"><span aria-hidden="true"></span>Alaska</a>
-                            <a href="#"><span aria-hidden="true"></span>Hawaii</a>
+                            <a href="#">Oregon</a>
+                            <a href="#">Alaska</a>
+                            <a href="#">Hawaii</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +71,7 @@
                         <path d="M15.559 47.741C15.159 48.122 15.142 48.755 15.523 49.155C15.904 49.555 16.538 49.57 16.937 49.19L23.107 43.322V53.41C23.107 53.963 23.555 54.41 24.107 54.41C24.659 54.41 25.107 53.963 25.107 53.41V43.308L31.241 49.265C31.435 49.453 31.687 49.547 31.938 49.547C32.199 49.547 32.459 49.445 32.655 49.243C33.04 48.847 33.03 48.214 32.634 47.829L25.107 40.519V36.143L31.269 42.129C31.463 42.317 31.715 42.411 31.966 42.411C32.227 42.411 32.487 42.309 32.683 42.107C33.068 41.711 33.058 41.078 32.662 40.693L25.106 33.354V28.979L31.296 34.991C31.49 35.179 31.742 35.273 31.993 35.273C32.254 35.273 32.514 35.171 32.71 34.969C33.095 34.573 33.085 33.94 32.689 33.555L24.884 25.975C24.499 25.603 23.886 25.598 23.498 25.968L15.614 33.466C15.214 33.847 15.197 34.48 15.578 34.88C15.959 35.279 16.593 35.295 16.992 34.915L23.105 29.101V33.45L15.585 40.601C15.185 40.982 15.168 41.615 15.549 42.015C15.93 42.414 16.564 42.43 16.963 42.05L23.105 36.209V40.559L15.559 47.741Z" fill="#165A2E"/>
                         </svg>                        
                     <div class="header">Find your next adventure</div>
-                    <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 </div>
                 <div class="item yellow">
                     <svg width="65" height="80" viewBox="0 0 65 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,15 +88,11 @@
                         <path d="M15.0593 22.812C16.7893 22.812 18.4242 22.203 19.7272 21.092L28.6303 29.995C16.8302 42.458 7.91125 58.713 2.41125 78.253C2.31425 78.598 2.40925 78.969 2.66125 79.225L2.69025 79.255C2.88025 79.449 3.13825 79.554 3.40325 79.554C3.49425 79.554 3.58525 79.542 3.67425 79.516C23.2202 74.014 39.5353 65.155 52.1043 53.469L60.0623 61.427C57.6553 64.258 57.7822 68.521 60.4543 71.194L70.1202 80.86C70.3152 81.055 70.5713 81.153 70.8272 81.153C71.0832 81.153 71.3392 81.055 71.5342 80.86L80.3213 72.073C80.5093 71.885 80.6143 71.631 80.6143 71.366C80.6143 71.101 80.5093 70.846 80.3213 70.659L70.6553 60.993C68.1862 58.524 64.3572 58.224 61.5552 60.092L53.5543 52.09C66.6743 39.367 75.4932 23.439 79.3493 4.93103L79.3962 4.70203C79.4652 4.37203 79.3642 4.03003 79.1252 3.79103L78.8452 3.51003C78.6102 3.27503 78.2743 3.17203 77.9473 3.23403L77.7772 3.26703C59.0082 6.89903 42.8802 15.548 30.0232 28.557L21.0632 19.6C21.8503 18.425 22.2732 17.044 22.2732 15.598C22.2732 13.671 21.5222 11.86 20.1602 10.498L10.4943 0.832031C10.1193 0.457031 9.45525 0.457031 9.08025 0.832031L0.29325 9.62003C-0.09775 10.011 -0.09775 10.643 0.29325 11.034L9.95825 20.7C11.3213 22.062 13.1323 22.812 15.0593 22.812ZM65.5542 60.884C66.8892 60.884 68.2243 61.392 69.2412 62.408L78.2002 71.366L70.8272 78.739L61.8683 69.781C59.9773 67.89 59.8693 64.907 61.4972 62.863L70.9422 72.308C71.1372 72.503 71.3932 72.601 71.6492 72.601C71.9052 72.601 72.1612 72.503 72.3562 72.308C72.7472 71.917 72.7472 71.285 72.3562 70.894L63.0252 61.562C63.8112 61.125 64.6782 60.884 65.5542 60.884ZM4.82225 77.104C10.2553 58.669 18.8242 43.286 30.0512 31.417L50.6823 52.048C38.7103 63.164 23.2673 71.673 4.82225 77.104ZM77.1973 5.42203C73.3303 23.14 64.7673 38.413 52.1273 50.665L31.4472 29.985C43.8132 17.472 59.2572 9.08003 77.1973 5.42203ZM9.78625 2.95403L18.7452 11.912C19.7292 12.897 20.2722 14.206 20.2722 15.598C20.2722 16.502 20.0212 17.361 19.5912 18.129L10.8473 9.38503C10.4563 8.99403 9.82425 8.99403 9.43325 9.38503C9.04225 9.77603 9.04225 10.408 9.43325 10.799L18.2902 19.656C16.2452 21.285 13.2633 21.176 11.3723 19.285L2.41425 10.327L9.78625 2.95403Z" fill="#0F4163"/>
                         </svg>                        
                     <div class="header">Arrange the best activities</div>
-                    <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 </div>
             </div>
-        </main>
+        </div>
         <include src="workshop1-manual-testing/exercises-start/_includes/footer.html"></include>
         <script src="script.js"></script>
-        <script>
-            const homeLink = document.getElementById('home-link')
-            homeLink.ariaCurrent = 'page'
-        </script>
     </body>
 </html>
